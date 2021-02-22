@@ -3,7 +3,7 @@
 (*** Wolfram CDF File ***)
 (* http://www.wolfram.com/cdf *)
 
-(* CreatedBy='Mathematica 10.0' *)
+(* CreatedBy='Mathematica 10.1' *)
 
 (*************************************************************************)
 (*                                                                       *)
@@ -23,10 +23,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[      1064,         20]
-NotebookDataLength[    411659,       8086]
-NotebookOptionsPosition[    410851,       8047]
-NotebookOutlinePosition[    411303,       8067]
-CellTagsIndexPosition[    411260,       8064]
+NotebookDataLength[    411801,       8089]
+NotebookOptionsPosition[    410908,       8048]
+NotebookOutlinePosition[    411441,       8070]
+CellTagsIndexPosition[    411398,       8067]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -6657,7 +6657,7 @@ $CellContext`CSVmDY8TeVInterpolation =
                     
                     DynamicBox[ToBoxes[$CellContext`MMmin$$, TraditionalForm],
                     
-                    ImageSizeCache->{20., {0., 9.}}]},
+                    ImageSizeCache->{24., {1., 12.}}]},
                     {"\<\"\\!\\(\\*SubscriptBox[\\(M\\), \\(maz\\)]\\)\"\>", 
                     SliderBox[Dynamic[
                     
@@ -6668,7 +6668,7 @@ $CellContext`CSVmDY8TeVInterpolation =
                     
                     DynamicBox[ToBoxes[$CellContext`MMmax$$, TraditionalForm],
                     
-                    ImageSizeCache->{26., {0., 9.}}]}
+                    ImageSizeCache->{33., {1., 12.}}]}
                    },
                    
                    GridBoxAlignment->{
@@ -6696,12 +6696,12 @@ $CellContext`CSVmDY8TeVInterpolation =
                     VerticalSlider[
                     Dynamic[$CellContext`ev$$], 
                     Log[10, {1.*^-9, 10}]], TraditionalForm],
-                    ImageSizeCache->{23., {97., 103.}}],
+                    ImageSizeCache->{23., {121., 129.}}],
                     DynamicModuleValues:>{}]},
                     {
                     DynamicBox[ToBoxes[
                     Re[$CellContext`CSmin$$], TraditionalForm],
-                    ImageSizeCache->{47., {1., 12.}}]}
+                    ImageSizeCache->{55., {1., 14.}}]}
                    },
                    
                    GridBoxAlignment->{
@@ -6728,13 +6728,13 @@ $CellContext`CSVmDY8TeVInterpolation =
                     VerticalSlider[
                     Dynamic[$CellContext`ev$$], 
                     Log[10, {1.*^-9, 10}]], TraditionalForm],
-                    ImageSizeCache->{23., {97., 103.}}],
+                    ImageSizeCache->{23., {121., 129.}}],
                     DynamicModuleValues:>{}]},
                     {
                     
                     DynamicBox[ToBoxes[$CellContext`CSmax$$, TraditionalForm],
                     
-                    ImageSizeCache->{16., {1., 9.}}]}
+                    ImageSizeCache->{20., {1., 11.}}]}
                    },
                    
                    GridBoxAlignment->{
@@ -6778,8 +6778,9 @@ $CellContext`MMmax$$}, {$CellContext`CSmin$$, $CellContext`CSmax$$}},
                     Style["\!\(\*SuperscriptBox[\(V\), \(0\)]\)", Blue]) 
                     Style["\!\(\*SuperscriptBox[\(V\), \(-\)]\)", 
                     Darker[Green]]}}]], TraditionalForm],
-                    ImageSizeCache->{600., {191., 196.}}]}
+                    ImageSizeCache->{750., {239., 246.}}]}
                     },
+                    
                     GridBoxAlignment->{
                     "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, 
                     "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
@@ -7009,7 +7010,7 @@ $CellContext`CSVmDY13TeVTabletmp2, $CellContext`CSVmDY13TeVTabletmp3]),
                     
                     DynamicBox[ToBoxes[$CellContext`MMmin$$, TraditionalForm],
                     
-                    ImageSizeCache->{20., {0., 9.}}]},
+                    ImageSizeCache->{24., {1., 12.}}]},
                     {"\<\"\\!\\(\\*SubscriptBox[\\(M\\), \\(maz\\)]\\)\"\>", 
                     SliderBox[Dynamic[
                     
@@ -7020,7 +7021,7 @@ $CellContext`CSVmDY13TeVTabletmp2, $CellContext`CSVmDY13TeVTabletmp3]),
                     
                     DynamicBox[ToBoxes[$CellContext`MMmax$$, TraditionalForm],
                     
-                    ImageSizeCache->{34., {0., 9.}}]}
+                    ImageSizeCache->{43., {1., 11.}}]}
                    },
                    
                    GridBoxAlignment->{
@@ -7050,12 +7051,12 @@ $CellContext`CSVmDY13TeVTabletmp2, $CellContext`CSVmDY13TeVTabletmp3]),
                     VerticalSlider[
                     Dynamic[$CellContext`ev$$], 
                     Log[10, {1.*^-12, 100}]], TraditionalForm],
-                    ImageSizeCache->{23., {97., 103.}}],
+                    ImageSizeCache->{23., {121., 129.}}],
                     DynamicModuleValues:>{}]},
                     {
                     DynamicBox[ToBoxes[
                     Re[$CellContext`CSmin$$], TraditionalForm],
-                    ImageSizeCache->{51., {1., 12.}}]}
+                    ImageSizeCache->{61., {1., 14.}}]}
                    },
                    
                    GridBoxAlignment->{
@@ -7082,13 +7083,13 @@ $CellContext`CSVmDY13TeVTabletmp2, $CellContext`CSVmDY13TeVTabletmp3]),
                     VerticalSlider[
                     Dynamic[$CellContext`ev$$], 
                     Log[10, {1.*^-12, 100}]], TraditionalForm],
-                    ImageSizeCache->{23., {97., 103.}}],
+                    ImageSizeCache->{23., {121., 129.}}],
                     DynamicModuleValues:>{}]},
                     {
                     
                     DynamicBox[ToBoxes[$CellContext`CSmax$$, TraditionalForm],
                     
-                    ImageSizeCache->{23., {1., 9.}}]}
+                    ImageSizeCache->{28., {1., 11.}}]}
                    },
                    
                    GridBoxAlignment->{
@@ -7126,13 +7127,13 @@ $CellContext`MMmax$$}, {$CellContext`CSmin$$, $CellContext`CSmax$$}},
                     Darker[Green], 
                     Thickness[0.006]]}, FrameStyle -> 20, 
                     FrameLabel -> {{"\[Sigma](pp \[Rule] V) [pb]", ""}, {
-                    "\!\(\*SubscriptBox[\(M\), \(V\)]\) [TeV]", 
+                    "\!\(\*SubscriptBox[\(M\), \(V\)]\) [TeV]", ((
                     "DY prodiction @8TeV, CTEQ6L1, " 
-                    Style["\!\(\*SuperscriptBox[\(V\), \(+\)]\)", Red] 
-                    Style["\!\(\*SuperscriptBox[\(V\), \(0\)]\)", Blue] 
+                    Style["\!\(\*SuperscriptBox[\(V\), \(+\)]\)", Red]) 
+                    Style["\!\(\*SuperscriptBox[\(V\), \(0\)]\)", Blue]) 
                     Style["\!\(\*SuperscriptBox[\(V\), \(-\)]\)", 
                     Darker[Green]]}}]], TraditionalForm],
-                    ImageSizeCache->{600., {191., 196.}}]}
+                    ImageSizeCache->{750., {239., 246.}}]}
                     },
                     
                     GridBoxAlignment->{
@@ -7289,10 +7290,10 @@ $CellContext`CSV0DY13TeVTable, $CellContext`CSVmDY13TeVTable}, Axes -> False,
                     Darker[Green], 
                     Thickness[0.006]]}, FrameStyle -> 20, 
                  FrameLabel -> {{"\[Sigma](pp \[Rule] V) [pb]", ""}, {
-                   "\!\(\*SubscriptBox[\(M\), \(V\)]\) [TeV]", 
+                   "\!\(\*SubscriptBox[\(M\), \(V\)]\) [TeV]", ((
                     "DY prodiction @8TeV, CTEQ6L1, " 
-                    Style["\!\(\*SuperscriptBox[\(V\), \(+\)]\)", Red] 
-                    Style["\!\(\*SuperscriptBox[\(V\), \(0\)]\)", Blue] 
+                    Style["\!\(\*SuperscriptBox[\(V\), \(+\)]\)", Red]) 
+                    Style["\!\(\*SuperscriptBox[\(V\), \(0\)]\)", Blue]) 
                     Style["\!\(\*SuperscriptBox[\(V\), \(-\)]\)", 
                     Darker[Green]]}}]]]}]}}, TableAlignments -> Center]], 
         DynamicModuleValues :> {}]}]}]], TraditionalForm]], "Output"],
@@ -7368,7 +7369,7 @@ $CellContext`CSVmDY14TeVTabletmp2, $CellContext`CSVmDY14TeVTabletmp3]),
                     
                     DynamicBox[ToBoxes[$CellContext`MMmin$$, TraditionalForm],
                     
-                    ImageSizeCache->{20., {0., 9.}}]},
+                    ImageSizeCache->{24., {1., 12.}}]},
                     {"\<\"\\!\\(\\*SubscriptBox[\\(M\\), \\(maz\\)]\\)\"\>", 
                     SliderBox[Dynamic[
                     
@@ -7379,7 +7380,7 @@ $CellContext`CSVmDY14TeVTabletmp2, $CellContext`CSVmDY14TeVTabletmp3]),
                     
                     DynamicBox[ToBoxes[$CellContext`MMmax$$, TraditionalForm],
                     
-                    ImageSizeCache->{34., {0., 9.}}]}
+                    ImageSizeCache->{43., {1., 11.}}]}
                    },
                    
                    GridBoxAlignment->{
@@ -7409,12 +7410,12 @@ $CellContext`CSVmDY14TeVTabletmp2, $CellContext`CSVmDY14TeVTabletmp3]),
                     VerticalSlider[
                     Dynamic[$CellContext`ev$$], 
                     Log[10, {1.*^-12, 100}]], TraditionalForm],
-                    ImageSizeCache->{23., {97., 103.}}],
+                    ImageSizeCache->{23., {121., 129.}}],
                     DynamicModuleValues:>{}]},
                     {
                     DynamicBox[ToBoxes[
                     Re[$CellContext`CSmin$$], TraditionalForm],
-                    ImageSizeCache->{51., {1., 12.}}]}
+                    ImageSizeCache->{61., {1., 14.}}]}
                    },
                    
                    GridBoxAlignment->{
@@ -7441,13 +7442,13 @@ $CellContext`CSVmDY14TeVTabletmp2, $CellContext`CSVmDY14TeVTabletmp3]),
                     VerticalSlider[
                     Dynamic[$CellContext`ev$$], 
                     Log[10, {1.*^-12, 100}]], TraditionalForm],
-                    ImageSizeCache->{23., {97., 103.}}],
+                    ImageSizeCache->{23., {121., 129.}}],
                     DynamicModuleValues:>{}]},
                     {
                     
                     DynamicBox[ToBoxes[$CellContext`CSmax$$, TraditionalForm],
                     
-                    ImageSizeCache->{23., {1., 9.}}]}
+                    ImageSizeCache->{28., {1., 11.}}]}
                    },
                    
                    GridBoxAlignment->{
@@ -7485,13 +7486,13 @@ $CellContext`MMmax$$}, {$CellContext`CSmin$$, $CellContext`CSmax$$}},
                     Darker[Green], 
                     Thickness[0.006]]}, FrameStyle -> 20, 
                     FrameLabel -> {{"\[Sigma](pp \[Rule] V) [pb]", ""}, {
-                    "\!\(\*SubscriptBox[\(M\), \(V\)]\) [TeV]", 
+                    "\!\(\*SubscriptBox[\(M\), \(V\)]\) [TeV]", ((
                     "DY prodiction @8TeV, CTEQ6L1, " 
-                    Style["\!\(\*SuperscriptBox[\(V\), \(+\)]\)", Red] 
-                    Style["\!\(\*SuperscriptBox[\(V\), \(0\)]\)", Blue] 
+                    Style["\!\(\*SuperscriptBox[\(V\), \(+\)]\)", Red]) 
+                    Style["\!\(\*SuperscriptBox[\(V\), \(0\)]\)", Blue]) 
                     Style["\!\(\*SuperscriptBox[\(V\), \(-\)]\)", 
                     Darker[Green]]}}]], TraditionalForm],
-                    ImageSizeCache->{600., {191., 196.}}]}
+                    ImageSizeCache->{750., {239., 246.}}]}
                     },
                     
                     GridBoxAlignment->{
@@ -7648,10 +7649,10 @@ $CellContext`CSV0DY14TeVTable, $CellContext`CSVmDY14TeVTable}, Axes -> False,
                     Darker[Green], 
                     Thickness[0.006]]}, FrameStyle -> 20, 
                  FrameLabel -> {{"\[Sigma](pp \[Rule] V) [pb]", ""}, {
-                   "\!\(\*SubscriptBox[\(M\), \(V\)]\) [TeV]", 
+                   "\!\(\*SubscriptBox[\(M\), \(V\)]\) [TeV]", ((
                     "DY prodiction @8TeV, CTEQ6L1, " 
-                    Style["\!\(\*SuperscriptBox[\(V\), \(+\)]\)", Red] 
-                    Style["\!\(\*SuperscriptBox[\(V\), \(0\)]\)", Blue] 
+                    Style["\!\(\*SuperscriptBox[\(V\), \(+\)]\)", Red]) 
+                    Style["\!\(\*SuperscriptBox[\(V\), \(0\)]\)", Blue]) 
                     Style["\!\(\*SuperscriptBox[\(V\), \(-\)]\)", 
                     Darker[Green]]}}]]]}]}}, TableAlignments -> Center]], 
         DynamicModuleValues :> {}]}]}]], TraditionalForm]], "Output"],
@@ -7727,7 +7728,7 @@ $CellContext`CSVmDY100TeVTabletmp2, $CellContext`CSVmDY100TeVTabletmp3]),
                     
                     DynamicBox[ToBoxes[$CellContext`MMmin$$, TraditionalForm],
                     
-                    ImageSizeCache->{20., {0., 9.}}]},
+                    ImageSizeCache->{24., {1., 12.}}]},
                     {"\<\"\\!\\(\\*SubscriptBox[\\(M\\), \\(maz\\)]\\)\"\>", 
                     SliderBox[Dynamic[
                     
@@ -7738,7 +7739,7 @@ $CellContext`CSVmDY100TeVTabletmp2, $CellContext`CSVmDY100TeVTabletmp3]),
                     
                     DynamicBox[ToBoxes[$CellContext`MMmax$$, TraditionalForm],
                     
-                    ImageSizeCache->{34., {0., 9.}}]}
+                    ImageSizeCache->{43., {1., 12.}}]}
                    },
                    
                    GridBoxAlignment->{
@@ -7766,12 +7767,12 @@ $CellContext`CSVmDY100TeVTabletmp2, $CellContext`CSVmDY100TeVTabletmp3]),
                     VerticalSlider[
                     Dynamic[$CellContext`ev$$], 
                     Log[10, {1.*^-10, 1000}]], TraditionalForm],
-                    ImageSizeCache->{23., {97., 103.}}],
+                    ImageSizeCache->{23., {121., 129.}}],
                     DynamicModuleValues:>{}]},
                     {
                     DynamicBox[ToBoxes[
                     Re[$CellContext`CSmin$$], TraditionalForm],
-                    ImageSizeCache->{51., {1., 12.}}]}
+                    ImageSizeCache->{61., {1., 14.}}]}
                    },
                    
                    GridBoxAlignment->{
@@ -7798,13 +7799,13 @@ $CellContext`CSVmDY100TeVTabletmp2, $CellContext`CSVmDY100TeVTabletmp3]),
                     VerticalSlider[
                     Dynamic[$CellContext`ev$$], 
                     Log[10, {1.*^-10, 1000}]], TraditionalForm],
-                    ImageSizeCache->{23., {97., 103.}}],
+                    ImageSizeCache->{23., {121., 129.}}],
                     DynamicModuleValues:>{}]},
                     {
                     
                     DynamicBox[ToBoxes[$CellContext`CSmax$$, TraditionalForm],
                     
-                    ImageSizeCache->{29., {1., 9.}}]}
+                    ImageSizeCache->{37., {1., 11.}}]}
                    },
                    
                    GridBoxAlignment->{
@@ -7848,7 +7849,7 @@ $CellContext`MMmax$$}, {$CellContext`CSmin$$, $CellContext`CSmax$$}},
                     Style["\!\(\*SuperscriptBox[\(V\), \(0\)]\)", Blue]) 
                     Style["\!\(\*SuperscriptBox[\(V\), \(-\)]\)", 
                     Darker[Green]]}}]], TraditionalForm],
-                    ImageSizeCache->{600., {191., 196.}}]}
+                    ImageSizeCache->{750., {239., 246.}}]}
                     },
                     
                     GridBoxAlignment->{
@@ -8045,14 +8046,16 @@ Cell[BoxData[
    Method->"Queued"], TraditionalForm]], "Output"]
 }, Open  ]]
 },
-WindowSize->{1092, 1259},
+WindowSize->{1340, 1155},
+WindowMargins->{{-461, Automatic}, {900, Automatic}},
 Visible->True,
 ScrollingOptions->{"VerticalScrollRange"->Fit},
 ShowCellBracket->Automatic,
 CellContext->Notebook,
 TrackCellChangeTimes->False,
-FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September 9, \
-2014)",
+Magnification:>1.25 Inherited,
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 28, \
+2016)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -8067,44 +8070,42 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[1486, 35, 98, 1, 97, "Title"],
-Cell[1587, 38, 269, 5, 81, "Subtitle"],
-Cell[1859, 45, 266, 4, 59, "Text"],
-Cell[2128, 51, 51, 1, 35, "Text"],
-Cell[2182, 54, 268887, 4841, 54, "Output"],
-Cell[271072, 4897, 51, 1, 35, "Text"],
-Cell[271126, 4900, 5301, 239, 85, "Text"],
-Cell[276430, 5141, 5665, 210, 99, "Text"],
-Cell[282098, 5353, 1346, 32, 111, "Text"],
-Cell[283447, 5387, 11376, 211, 94, "Output"],
-Cell[294826, 5600, 51, 1, 35, "Text"],
-Cell[294880, 5603, 1124, 23, 75, "Text"],
-Cell[296007, 5628, 51, 1, 35, "Text"],
-Cell[296061, 5631, 9310, 210, 608, "Output"],
-Cell[305374, 5843, 51, 1, 35, "Text"],
-Cell[305428, 5846, 678, 17, 62, "Text"],
-Cell[306109, 5865, 51, 1, 35, "Text"],
-Cell[306163, 5868, 23462, 412, 49, "Output"],
-Cell[329628, 6282, 12018, 276, 472, "Output"],
-Cell[341649, 6560, 51, 1, 35, "Text"],
-Cell[341703, 6563, 1200, 27, 114, "Text"],
-Cell[342906, 6592, 51, 1, 35, "Text"],
-Cell[342960, 6595, 16108, 343, 502, "Output"],
-Cell[359071, 6940, 51, 1, 35, "Text"],
-Cell[359125, 6943, 16878, 354, 513, "Output"],
-Cell[376006, 7299, 51, 1, 35, "Text"],
-Cell[376060, 7302, 16878, 354, 513, "Output"],
-Cell[392941, 7658, 51, 1, 35, "Text"],
-Cell[392995, 7661, 16909, 351, 502, "Output"],
-Cell[409907, 8014, 51, 1, 35, "Text"],
-Cell[409961, 8017, 251, 7, 36, "Text"],
-Cell[410215, 8026, 51, 1, 35, "Text"],
-Cell[410269, 8029, 566, 15, 49, "Output"]
+Cell[1486, 35, 98, 1, 120, "Title"],
+Cell[1587, 38, 269, 5, 100, "Subtitle"],
+Cell[1859, 45, 266, 4, 69, "Text"],
+Cell[2128, 51, 51, 1, 41, "Text"],
+Cell[2182, 54, 268887, 4841, 65, "Output"],
+Cell[271072, 4897, 51, 1, 41, "Text"],
+Cell[271126, 4900, 5301, 239, 99, "Text"],
+Cell[276430, 5141, 5665, 210, 140, "Text"],
+Cell[282098, 5353, 1346, 32, 127, "Text"],
+Cell[283447, 5387, 11376, 211, 116, "Output"],
+Cell[294826, 5600, 51, 1, 41, "Text"],
+Cell[294880, 5603, 1124, 23, 86, "Text"],
+Cell[296007, 5628, 51, 1, 41, "Text"],
+Cell[296061, 5631, 9310, 210, 740, "Output"],
+Cell[305374, 5843, 51, 1, 41, "Text"],
+Cell[305428, 5846, 678, 17, 70, "Text"],
+Cell[306109, 5865, 51, 1, 41, "Text"],
+Cell[306163, 5868, 23462, 412, 59, "Output"],
+Cell[329628, 6282, 12018, 276, 576, "Output"],
+Cell[341649, 6560, 51, 1, 41, "Text"],
+Cell[341703, 6563, 1200, 27, 128, "Text"],
+Cell[342906, 6592, 51, 1, 41, "Text"],
+Cell[342960, 6595, 16134, 344, 616, "Output"],
+Cell[359097, 6941, 51, 1, 53, "Text"],
+Cell[359151, 6944, 16891, 354, 758, "Output"],
+Cell[376045, 7300, 51, 1, 53, "Text"],
+Cell[376099, 7303, 16891, 354, 783, "Output"],
+Cell[392993, 7659, 51, 1, 53, "Text"],
+Cell[393047, 7662, 16914, 351, 783, "Output"],
+Cell[409964, 8015, 51, 1, 53, "Text"],
+Cell[410018, 8018, 251, 7, 56, "Text"],
+Cell[410272, 8027, 51, 1, 53, "Text"],
+Cell[410326, 8030, 566, 15, 76, "Output"]
 }, Open  ]]
 }
 ]
 *)
 
-(* End of internal cache information *)
-
-(* NotebookSignature rwDSg9QLfIf1eBg3pn#yON9E *)
+(* NotebookSignature Cu0ysfbt7VQUVDwCkxAum85A *)

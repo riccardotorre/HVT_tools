@@ -3,7 +3,7 @@
 (*** Wolfram CDF File ***)
 (* http://www.wolfram.com/cdf *)
 
-(* CreatedBy='Mathematica 10.0' *)
+(* CreatedBy='Mathematica 10.2' *)
 
 (*************************************************************************)
 (*                                                                       *)
@@ -23,10 +23,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[      1064,         20]
-NotebookDataLength[    344159,       6515]
-NotebookOptionsPosition[    343744,       6484]
-NotebookOutlinePosition[    344266,       6507]
-CellTagsIndexPosition[    344223,       6504]
+NotebookDataLength[    344120,       6514]
+NotebookOptionsPosition[    343709,       6483]
+NotebookOutlinePosition[    344227,       6506]
+CellTagsIndexPosition[    344184,       6503]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -5615,8 +5615,7 @@ Cell[TextData[StyleBox["Notice that points that are theoretically excluded \
 from the output.",
  FontSize->18]], "Text", "PluginEmbeddedContent"],
 
-Cell[TextData[StyleBox["",
- FontSize->18]], "Text", "PluginEmbeddedContent"],
+Cell["", "Text", "PluginEmbeddedContent"],
 
 Cell[BoxData[
  FormBox[
@@ -6482,17 +6481,17 @@ Cell[BoxData[
    FieldSize->{80, 20}], TraditionalForm]], "Output", "PluginEmbeddedContent"]
 }, Open  ]]
 },
-WindowSize->{1181, 1641},
+WindowSize->{1181, 1602},
 Visible->True,
-AuthoredSize->{1181, 1641},
+AuthoredSize->{1181, 1602},
 ScrollingOptions->{"HorizontalScrollRange"->Fit,
 "VerticalScrollRange"->Fit},
 ShowCellBracket->False,
 Deployed->True,
 CellContext->Notebook,
 TrackCellChangeTimes->False,
-FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September 9, \
-2014)",
+FrontEndVersion->"10.2 for Mac OS X x86 (32-bit, 64-bit Kernel) (July 29, \
+2015)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -6509,26 +6508,26 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[1486, 35, 123, 1, 57, "Title"],
 Cell[1612, 38, 327, 6, 59, "Subtitle"],
-Cell[1942, 46, 196, 2, 21, "Text"],
-Cell[2141, 50, 76, 1, 21, "Text"],
+Cell[1942, 46, 196, 2, 19, "Text"],
+Cell[2141, 50, 76, 1, 19, "Text"],
 Cell[2220, 53, 257994, 4661, 39, "Output"],
-Cell[260217, 4716, 76, 1, 21, "Text"],
-Cell[260296, 4719, 1337, 30, 78, "Text"],
-Cell[261636, 4751, 76, 1, 21, "Text"],
+Cell[260217, 4716, 76, 1, 19, "Text"],
+Cell[260296, 4719, 1337, 30, 68, "Text"],
+Cell[261636, 4751, 76, 1, 19, "Text"],
 Cell[261715, 4754, 1434, 37, 39, "Output"],
 Cell[263152, 4793, 29579, 739, 271, "Output"],
-Cell[292734, 5534, 76, 1, 21, "Text"],
-Cell[292813, 5537, 902, 21, 74, "Text"],
+Cell[292734, 5534, 76, 1, 19, "Text"],
+Cell[292813, 5537, 902, 21, 67, "Text"],
 Cell[293718, 5560, 2810, 50, 19, "Output"],
-Cell[296531, 5612, 221, 3, 21, "Text"],
-Cell[296755, 5617, 76, 1, 21, "Text"],
-Cell[296834, 5620, 22983, 414, 34, "Output"],
-Cell[319820, 6036, 188, 4, 18, "Output"],
-Cell[320011, 6042, 219, 6, 332, "Output"],
-Cell[320233, 6050, 76, 1, 21, "Text"],
-Cell[320312, 6053, 23001, 414, 34, "Output"],
-Cell[343316, 6469, 189, 4, 18, "Output"],
-Cell[343508, 6475, 220, 6, 332, "Output"]
+Cell[296531, 5612, 221, 3, 19, "Text"],
+Cell[296755, 5617, 41, 0, 15, "Text"],
+Cell[296799, 5619, 22983, 414, 34, "Output"],
+Cell[319785, 6035, 188, 4, 18, "Output"],
+Cell[319976, 6041, 219, 6, 332, "Output"],
+Cell[320198, 6049, 76, 1, 19, "Text"],
+Cell[320277, 6052, 23001, 414, 34, "Output"],
+Cell[343281, 6468, 189, 4, 18, "Output"],
+Cell[343473, 6474, 220, 6, 332, "Output"]
 }, Open  ]]
 }
 ]
@@ -6536,4 +6535,4 @@ Cell[343508, 6475, 220, 6, 332, "Output"]
 
 (* End of internal cache information *)
 
-(* NotebookSignature uwT5QpR9kpk0FCwUDMX5W6PS *)
+(* NotebookSignature dxT9bekNwQTq4DwZFOsVWito *)

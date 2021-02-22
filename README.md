@@ -1,5 +1,7 @@
 # HVT tools
-This repository contains different resources for the study of Heavy Vector Triplets, whose physics is documented in [arXiv:1402.4431](https://arxiv.org/abs/1402.4431) and that have been originally made availanle [here](http://rtorre.web.cern.ch/rtorre/Riccardotorre/vector_triplet_t.html). In particular the repository includes the following resources:
+This repository contains different resources for the study of Heavy Vector Triplets, whose physics is documented in [arXiv:1402.4431](https://arxiv.org/abs/1402.4431) and that have been originally made availanle [here](http://rtorre.web.cern.ch/rtorre/Riccardotorre/vector_triplet_t.html). 
+
+In particular the repository includes the following resources:
 
 - HVT_FeynRules: FeynRules Model implementation v1.0 (also available from [HEPMDB](https://hepmdb.soton.ac.uk/index.php?mod=user&act=showmodel&id=0214.0151))
 

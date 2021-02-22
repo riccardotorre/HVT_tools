@@ -3,30 +3,30 @@
 (*** Wolfram CDF File ***)
 (* http://www.wolfram.com/cdf *)
 
-(* CreatedBy='Mathematica 10.0' *)
+(* CreatedBy='Mathematica 11.2' *)
 
-(*************************************************************************)
-(*                                                                       *)
-(*  The Mathematica License under which this file was created prohibits  *)
-(*  restricting third parties in receipt of this file from republishing  *)
-(*  or redistributing it by any means, including but not limited to      *)
-(*  rights management or terms of use, without the express consent of    *)
-(*  Wolfram Research, Inc. For additional information concerning CDF     *)
-(*  licensing and redistribution see:                                    *)
-(*                                                                       *)
-(*        www.wolfram.com/cdf/adopting-cdf/licensing-options.html        *)
-(*                                                                       *)
-(*************************************************************************)
+(***************************************************************************)
+(*                                                                         *)
+(*                                                                         *)
+(*  Under the Wolfram FreeCDF terms of use, this file and its content are  *)
+(*  bound by the Creative Commons BY-SA Attribution-ShareAlike license.    *)
+(*                                                                         *)
+(*        For additional information concerning CDF licensing, see:        *)
+(*                                                                         *)
+(*         www.wolfram.com/cdf/adopting-cdf/licensing-options.html         *)
+(*                                                                         *)
+(*                                                                         *)
+(***************************************************************************)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
-NotebookDataPosition[      1064,         20]
-NotebookDataLength[    342698,       6471]
-NotebookOptionsPosition[    342440,       6445]
-NotebookOutlinePosition[    342892,       6465]
-CellTagsIndexPosition[    342849,       6462]
+NotebookDataPosition[      1088,         20]
+NotebookDataLength[    348876,       6569]
+NotebookOptionsPosition[    347826,       6550]
+NotebookOutlinePosition[    348179,       6565]
+CellTagsIndexPosition[    348136,       6562]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -34,21 +34,40 @@ Notebook[{
 
 Cell[CellGroupData[{
 Cell[TextData[StyleBox["Heavy Vector Triplet: Bridging Theory and Data",
- FontSize->48]], "Title"],
+ FontSize->48]], "Title",
+ CellChangeTimes->{
+  3.598953231526466*^9, {3.598953298035593*^9, 3.5989533089477463`*^9}, {
+   3.600000532613434*^9, 
+   3.600000532892655*^9}},ExpressionUUID->"7c302cea-1770-4a7d-b763-\
+7aa5d919dbb4"],
 
 Cell[TextData[StyleBox[" Scan \[Sigma]\[CloseCurlyQuote]s, \[CapitalGamma]\
 \[CloseCurlyQuote]s and BR\[CloseCurlyQuote]s over the parameter space",
  FontSize->36,
  FontColor->RGBColor[
   0.98803692683299, 0.14654764629587244`, 0.1057450217441062]]], "Subtitle",
- Background->RGBColor[0.87, 0.94, 1]],
+ CellChangeTimes->{{3.5989530717086163`*^9, 3.598953148252963*^9}, {
+  3.5997598900301533`*^9, 3.599759897646854*^9}, {3.613455766581922*^9, 
+  3.61345578579305*^9}, {3.613468554437291*^9, 3.613468598856574*^9}},
+ Background->RGBColor[
+  0.87, 0.94, 1],ExpressionUUID->"62a40c53-b2d4-4659-9972-23b628e46a18"],
 
 Cell[TextData[StyleBox["The button below sets the definitions and initializes \
 the parameters, the widths and the BRs (can take a few seconds).",
- FontSize->18]], "Text"],
+ FontSize->18]], "Text",
+ CellChangeTimes->{{3.5997589854680357`*^9, 3.5997590322559023`*^9}, {
+  3.599761788753929*^9, 3.5997617935016727`*^9}, {3.5997622003853807`*^9, 
+  3.599762207076984*^9}, {3.61345579688651*^9, 
+  3.613455800417306*^9}},ExpressionUUID->"91fd3070-92e5-4f73-83cc-\
+f713f7ad3cfb"],
 
 Cell[TextData[StyleBox["",
- FontSize->18]], "Text"],
+ FontSize->18]], "Text",
+ CellChangeTimes->{{3.5997589854680357`*^9, 3.5997590322559023`*^9}, {
+   3.599761788753929*^9, 3.5997617935016727`*^9}, {3.5997622003853807`*^9, 
+   3.599762207076984*^9}, 
+   3.599762916890162*^9},ExpressionUUID->"939185cd-e613-4067-8d8a-\
+bf3073920890"],
 
 Cell[BoxData[
  FormBox[
@@ -4648,6 +4667,28 @@ $CellContext`c3n]^2); $CellContext`CSVpDY8TeV[
            4 (Pi^2/3))) $CellContext`DY\[Rho]0uu8Func[$CellContext`MVz/
            1000] + (($CellContext`VzddbarWidthfunc[$CellContext`MVz]/$\
 CellContext`MVz) (4 (Pi^2/3))) $CellContext`DY\[Rho]0dd8Func[$CellContext`MVz/
+           1000]; $CellContext`CSVpDY13TeV[
+         Pattern[$CellContext`MVz, 
+          
+          Blank[]]] := \
+(($CellContext`VcudbarWidthfunc[$CellContext`MVz]/$CellContext`MVz) (
+          4 (Pi^2/3))) $CellContext`DY\[Rho]plus13Func[(1/
+           1000) $CellContext`MVz]; $CellContext`CSVmDY13TeV[
+         Pattern[$CellContext`MVz, 
+          
+          Blank[]]] := \
+(($CellContext`VcudbarWidthfunc[$CellContext`MVz]/$CellContext`MVz) (
+          4 (Pi^2/3))) $CellContext`DY\[Rho]minus13Func[(1/
+           1000) $CellContext`MVz]; $CellContext`CSV0DY13TeV[
+         Pattern[$CellContext`MVz, 
+          
+          Blank[]]] := \
+(($CellContext`VzuubarWidthfunc[$CellContext`MVz]/$CellContext`MVz) (
+           4 (Pi^2/3))) $CellContext`DY\[Rho]0uu13Func[$CellContext`MVz/
+           
+           1000] + (($CellContext`VzddbarWidthfunc[$CellContext`MVz]/$\
+CellContext`MVz) (
+           4 (Pi^2/3))) $CellContext`DY\[Rho]0dd13Func[$CellContext`MVz/
            1000]; $CellContext`CSVpDY14TeV[
          Pattern[$CellContext`MVz, 
           
@@ -4666,7 +4707,6 @@ CellContext`MVz) (4 (Pi^2/3))) $CellContext`DY\[Rho]0dd8Func[$CellContext`MVz/
           Blank[]]] := \
 (($CellContext`VzuubarWidthfunc[$CellContext`MVz]/$CellContext`MVz) (
            4 (Pi^2/3))) $CellContext`DY\[Rho]0uu14Func[$CellContext`MVz/
-           
            1000] + (($CellContext`VzddbarWidthfunc[$CellContext`MVz]/$\
 CellContext`MVz) (
            4 (Pi^2/3))) $CellContext`DY\[Rho]0dd14Func[$CellContext`MVz/
@@ -4702,6 +4742,17 @@ CellContext`MVz) (
            4 (Pi^2/3))) $CellContext`DY\[Rho]0uu8Func[$CellContext`MVznum/
            1000] + (($CellContext`VzddbarWidthnum/$CellContext`MVznum) (
            4 (Pi^2/3))) $CellContext`DY\[Rho]0dd8Func[$CellContext`MVznum/
+           1000]; $CellContext`CSVpDY13TeVnum := \
+(($CellContext`VcudbarWidthnum/$CellContext`MVcn) (
+          4 (Pi^2/3))) $CellContext`DY\[Rho]plus13Func[(1/
+           1000) $CellContext`MVcn]; $CellContext`CSVmDY13TeVnum := \
+(($CellContext`VcudbarWidthnum/$CellContext`MVcn) (
+          4 (Pi^2/3))) $CellContext`DY\[Rho]minus13Func[(1/
+           1000) $CellContext`MVcn]; $CellContext`CSV0DY13TeVnum := \
+(($CellContext`VzuubarWidthnum/$CellContext`MVznum) (
+           4 (Pi^2/3))) $CellContext`DY\[Rho]0uu13Func[$CellContext`MVznum/
+           1000] + (($CellContext`VzddbarWidthnum/$CellContext`MVznum) (
+           4 (Pi^2/3))) $CellContext`DY\[Rho]0dd13Func[$CellContext`MVznum/
            1000]; $CellContext`CSVpDY14TeVnum := \
 (($CellContext`VcudbarWidthnum/$CellContext`MVcn) (
           4 (Pi^2/3))) $CellContext`DY\[Rho]plus14Func[(1/
@@ -4733,10 +4784,18 @@ CellContext`MVz) (
     TooltipStyle->"TextStyling"],
    Annotation[#, 
     Style["Set the definitions and initialize the parameters.", 15], 
-    "Tooltip"]& ], TraditionalForm]], "Output"],
+    "Tooltip"]& ], TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.665384027826139*^9},ExpressionUUID->"c885f0b6-b5c0-4d8b-950e-\
+3d6e6d57bc5c"],
 
 Cell[TextData[StyleBox["",
- FontSize->18]], "Text"],
+ FontSize->18]], "Text",
+ CellChangeTimes->{{3.5997589854680357`*^9, 3.5997590322559023`*^9}, {
+   3.599761788753929*^9, 3.5997617935016727`*^9}, {3.5997622003853807`*^9, 
+   3.599762207076984*^9}, 
+   3.599762916890162*^9},ExpressionUUID->"468a1a39-3598-4cad-9022-\
+5549bffcdf86"],
 
 Cell[BoxData[
  StyleBox[
@@ -4768,10 +4827,26 @@ Cell[BoxData[
     " ", "the", " ", 
     RowBox[{"scan", "."}]}]}],
   FontFamily->"Arial",
-  FontSize->18]], "Text"],
+  FontSize->18]], "Text",
+ CellChangeTimes->{
+  3.599759072168405*^9, {3.599759170441674*^9, 3.599759425244849*^9}, {
+   3.599760913937716*^9, 3.599760932611059*^9}, {3.5997611419092712`*^9, 
+   3.5997611994744177`*^9}, {3.5997612300991993`*^9, 
+   3.5997612748391027`*^9}, {3.599762214952937*^9, 3.599762251043352*^9}, {
+   3.6008445010416527`*^9, 3.600844506835088*^9}, {3.601280375305853*^9, 
+   3.601280375687639*^9}, {3.614403054549107*^9, 3.614403097711606*^9}, {
+   3.614403134857848*^9, 3.6144031744112387`*^9}, {3.614403810632572*^9, 
+   3.614403815760775*^9}, {3.614406466286212*^9, 
+   3.61440650193438*^9}},ExpressionUUID->"5ce4a133-b431-409a-9c25-\
+74a12409e23f"],
 
 Cell[TextData[StyleBox["",
- FontSize->18]], "Text"],
+ FontSize->18]], "Text",
+ CellChangeTimes->{{3.5997589854680357`*^9, 3.5997590322559023`*^9}, {
+   3.599761788753929*^9, 3.5997617935016727`*^9}, {3.5997622003853807`*^9, 
+   3.599762207076984*^9}, 
+   3.599762916890162*^9},ExpressionUUID->"8ddd8ffb-c833-4457-b93d-\
+47da3ccd14d5"],
 
 Cell[BoxData[
  FormBox[
@@ -4809,7 +4884,10 @@ Cell[BoxData[
          Offset[0.4]}, 
         Offset[0.2]}, "RowsIndexed" -> {}}],
    Function[BoxForm`e$, 
-    TableForm[BoxForm`e$]]], TraditionalForm]], "Output"],
+    TableForm[BoxForm`e$]]], TraditionalForm]], "Output",
+ CellChangeTimes->{3.614405343233223*^9, 
+  3.614406076560096*^9},ExpressionUUID->"a29d3ca7-bf89-45cb-ab23-\
+66010ecc8684"],
 
 Cell[BoxData[
  FormBox[
@@ -5561,10 +5639,19 @@ Cell[BoxData[
          Offset[0.2]}, "RowsIndexed" -> {}}],
     Column],
    Function[BoxForm`e$, 
-    TableForm[BoxForm`e$]]], TraditionalForm]], "Output"],
+    TableForm[BoxForm`e$]]], TraditionalForm]], "Output",
+ CellChangeTimes->{{3.61440898177318*^9, 3.614408993189865*^9}, {
+  3.614957740993372*^9, 
+  3.614957759991486*^9}},ExpressionUUID->"af6b8493-217b-4a5e-966a-\
+04487e94452e"],
 
 Cell[TextData[StyleBox["",
- FontSize->18]], "Text"],
+ FontSize->18]], "Text",
+ CellChangeTimes->{{3.5997589854680357`*^9, 3.5997590322559023`*^9}, {
+   3.599761788753929*^9, 3.5997617935016727`*^9}, {3.5997622003853807`*^9, 
+   3.599762207076984*^9}, 
+   3.599762916890162*^9},ExpressionUUID->"6346227d-a9bc-4da1-933c-\
+c6df26ca0f74"],
 
 Cell[BoxData[
  StyleBox[
@@ -5587,7 +5674,16 @@ Cell[BoxData[
      " ", "the", " ", 
      RowBox[{"form", ":"}]}]}]}],
   FontFamily->"Arial",
-  FontSize->18]], "Text"],
+  FontSize->18]], "Text",
+ CellChangeTimes->{
+  3.599759072168405*^9, {3.599759170441674*^9, 3.599759425244849*^9}, {
+   3.599759933154078*^9, 3.5997599874681463`*^9}, {3.5997623156654654`*^9, 
+   3.5997623200737667`*^9}, {3.599762593024869*^9, 3.599762595273643*^9}, {
+   3.600869400101575*^9, 3.600869425031785*^9}, {3.600870393240841*^9, 
+   3.600870398909659*^9}, {3.613723722087858*^9, 3.6137237251012287`*^9}, {
+   3.61440327253119*^9, 
+   3.614403286299136*^9}},ExpressionUUID->"aeb6eaf5-220d-40e4-a48d-\
+3ee801f94310"],
 
 Cell[BoxData[
  FormBox[
@@ -5639,15 +5735,27 @@ Cell[BoxData[
         Offset[0.2], {
          Offset[0.4]}, 
         Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}], 
-  TraditionalForm]], "Output"],
+  TraditionalForm]], "Output",
+ CellChangeTimes->{
+  3.6137237297431993`*^9, {3.614958099282605*^9, 
+   3.614958118909163*^9}},ExpressionUUID->"706ed2c4-b114-49ff-89d0-\
+ff53c864674a"],
 
 Cell[TextData[StyleBox["Notice that points that are theoretically excluded \
 (e.g. giving non - real parameters and masses) are automatically excluded \
 from the output.",
- FontSize->18]], "Text"],
+ FontSize->18]], "Text",
+ CellChangeTimes->{{3.6150263321669292`*^9, 
+  3.615026342341576*^9}},ExpressionUUID->"74d71e96-de67-42b4-9c5c-\
+885bb0c364b6"],
 
 Cell[TextData[StyleBox["",
- FontSize->18]], "Text"],
+ FontSize->18]], "Text",
+ CellChangeTimes->{{3.5997589854680357`*^9, 3.5997590322559023`*^9}, {
+   3.599761788753929*^9, 3.5997617935016727`*^9}, {3.5997622003853807`*^9, 
+   3.599762207076984*^9}, 
+   3.599762916890162*^9},ExpressionUUID->"3acb8047-00bc-4d89-8459-\
+acbf0aa7543a"],
 
 Cell[BoxData[
  FormBox[
@@ -5660,7 +5768,9 @@ Cell[BoxData[
      SystemDialogInput[
       "Directory", WindowTitle -> "Save scan to.."]; $CellContext`filename = 
      StringJoin["scan", 
-       DateString["DateTimeShort"], ".txt"]; $CellContext`MVznumstep = If[
+       StringReplace[
+        DateString["DateTimeShort"], ":" -> "_"], 
+       ".txt"]; $CellContext`MVznumstep = If[
        And[$CellContext`MVznumscanN != 
         0, $CellContext`MVznumscanF - $CellContext`MVznumscanI != 
         0], ($CellContext`MVznumscanF - \
@@ -5736,13 +5846,12 @@ $CellContext`clnumscanI)/$CellContext`clnumstep +
 $CellContext`c3numscanI)/$CellContext`c3numstep + 
           1, ($CellContext`cvvwnumscanF - \
 $CellContext`cvvwnumscanI)/$CellContext`cvvwnumstep + 
-          
           1, ($CellContext`cvvhhnumscanF - \
 $CellContext`cvvhhnumscanI)/$CellContext`cvvhhnumstep + 
           1, ($CellContext`cvvvnumscanF - \
 $CellContext`cvvvnumscanI)/$CellContext`cvvvnumstep + 1}, 
-         1]]]; $CellContext`ScanResultTable = {}; $CellContext`indicator = 0; 
-    If[$CellContext`constraincF, 
+         1]]]; $CellContext`ScanResultTable8 = {}; $CellContext`indicator8 = 
+     0; If[$CellContext`constraincF, 
       For[$CellContext`MVznum = $CellContext`MVznumscanI, $CellContext`MVznum <= \
 $CellContext`MVznumscanF, 
        AddTo[$CellContext`MVznum, $CellContext`MVznumstep], 
@@ -5776,100 +5885,96 @@ $CellContext`cqnum; $CellContext`cvvwn = $CellContext`cvvwnum; \
 $CellContext`cvvhhn = $CellContext`cvvhhnum; $CellContext`cvvvn = \
 $CellContext`cvvvnum; $CellContext`aan = $CellContext`aanum; $CellContext`gwn = \
 $CellContext`gwnum; $CellContext`vvn = 
-              Sqrt[(((2 $CellContext`gwn^4) ($CellContext`MVzn^2 + \
-$CellContext`MZnum^2)) ($CellContext`gwn^2 - (4 $CellContext`\[Alpha]EWnum) 
-                   Pi) - 2 
-                 Sqrt[($CellContext`gwn^4 ($CellContext`gwn^2 - (
-                    4 $CellContext`\[Alpha]EWnum) 
-                    Pi)^2) ((((((-4) $CellContext`chn^2) $CellContext`gstn^2) \
-$CellContext`gwn^2) $CellContext`MVzn^2) $CellContext`MZnum^2 + \
-$CellContext`gwn^4 ($CellContext`MVzn^2 - $CellContext`MZnum^2)^2 + (((((
-                    16 $CellContext`\[Alpha]EWnum) $CellContext`chn^2) \
-$CellContext`gstn^2) $CellContext`MVzn^2) $CellContext`MZnum^2) 
+              Sqrt[(2 $CellContext`gwn^4 ($CellContext`MVzn^2 + \
+$CellContext`MZnum^2) ($CellContext`gwn^2 - 4 $CellContext`\[Alpha]EWnum Pi) - 
+                 2 Sqrt[$CellContext`gwn^4 ($CellContext`gwn^2 - 
+                    4 $CellContext`\[Alpha]EWnum 
+                    Pi)^2 ((-4) $CellContext`chn^2 $CellContext`gstn^2 \
+$CellContext`gwn^2 $CellContext`MVzn^2 $CellContext`MZnum^2 + \
+$CellContext`gwn^4 ($CellContext`MVzn^2 - $CellContext`MZnum^2)^2 + 
+                    16 $CellContext`\[Alpha]EWnum $CellContext`chn^2 \
+$CellContext`gstn^2 $CellContext`MVzn^2 $CellContext`MZnum^2 
                     Pi)])/($CellContext`gwn^4 ($CellContext`gwn^4 + \
-($CellContext`chn^2 $CellContext`gstn^2) ($CellContext`gwn^2 - (
-                    4 $CellContext`\[Alpha]EWnum) Pi)))]; $CellContext`mVn = 
+$CellContext`chn^2 $CellContext`gstn^2 ($CellContext`gwn^2 - 
+                   4 $CellContext`\[Alpha]EWnum Pi)))]; $CellContext`mVn = 
               Sqrt[($CellContext`gwn^10 ($CellContext`MVzn^2 + \
-$CellContext`MZnum^2) - (((
-                    4 $CellContext`\[Alpha]EWnum) $CellContext`gwn^8) \
-($CellContext`MVzn^2 + $CellContext`MZnum^2)) 
-                 Pi + ((((
-                    2 $CellContext`chn^2) $CellContext`gstn^2) \
-$CellContext`gwn^4) ($CellContext`MVzn^2 + $CellContext`MZnum^2)) \
-($CellContext`gwn^2 - (4 $CellContext`\[Alpha]EWnum) 
-                    Pi)^2 + $CellContext`gwn^4 
-                  Sqrt[($CellContext`gwn^4 ($CellContext`gwn^2 - (
-                    4 $CellContext`\[Alpha]EWnum) 
-                    Pi)^2) ((((((-4) $CellContext`chn^2) $CellContext`gstn^2) \
-$CellContext`gwn^2) $CellContext`MVzn^2) $CellContext`MZnum^2 + \
-$CellContext`gwn^4 ($CellContext`MVzn^2 - $CellContext`MZnum^2)^2 + (((((
-                    16 $CellContext`\[Alpha]EWnum) $CellContext`chn^2) \
-$CellContext`gstn^2) $CellContext`MVzn^2) $CellContext`MZnum^2) Pi)] + (((
-                    4 $CellContext`cvvhhn) $CellContext`gstn^2) \
-($CellContext`gwn^2 - (4 $CellContext`\[Alpha]EWnum) 
-                    Pi)) (-(($CellContext`gwn^4 ($CellContext`MVzn^2 + \
-$CellContext`MZnum^2)) ($CellContext`gwn^2 - (4 $CellContext`\[Alpha]EWnum) 
-                    Pi)) + 
-                   Sqrt[($CellContext`gwn^4 ($CellContext`gwn^2 - (
-                    4 $CellContext`\[Alpha]EWnum) 
-                    Pi)^2) ((((((-4) $CellContext`chn^2) $CellContext`gstn^2) \
-$CellContext`gwn^2) $CellContext`MVzn^2) $CellContext`MZnum^2 + \
-$CellContext`gwn^4 ($CellContext`MVzn^2 - $CellContext`MZnum^2)^2 + (((((
-                    16 $CellContext`\[Alpha]EWnum) $CellContext`chn^2) \
-$CellContext`gstn^2) $CellContext`MVzn^2) $CellContext`MZnum^2) Pi)]))/(((
-                  2 $CellContext`gwn^4) ($CellContext`gwn^2 - (
-                   4 $CellContext`\[Alpha]EWnum) 
-                  Pi)) ($CellContext`gwn^4 + ($CellContext`chn^2 \
-$CellContext`gstn^2) ($CellContext`gwn^2 - (4 $CellContext`\[Alpha]EWnum) 
+$CellContext`MZnum^2) - 
+                 4 $CellContext`\[Alpha]EWnum $CellContext`gwn^8 \
+($CellContext`MVzn^2 + $CellContext`MZnum^2) Pi + 
+                 2 $CellContext`chn^2 $CellContext`gstn^2 $CellContext`gwn^4 \
+($CellContext`MVzn^2 + $CellContext`MZnum^2) ($CellContext`gwn^2 - 
+                    4 $CellContext`\[Alpha]EWnum Pi)^2 + $CellContext`gwn^4 
+                  Sqrt[$CellContext`gwn^4 ($CellContext`gwn^2 - 
+                    4 $CellContext`\[Alpha]EWnum 
+                    Pi)^2 ((-4) $CellContext`chn^2 $CellContext`gstn^2 \
+$CellContext`gwn^2 $CellContext`MVzn^2 $CellContext`MZnum^2 + \
+$CellContext`gwn^4 ($CellContext`MVzn^2 - $CellContext`MZnum^2)^2 + 
+                    16 $CellContext`\[Alpha]EWnum $CellContext`chn^2 \
+$CellContext`gstn^2 $CellContext`MVzn^2 $CellContext`MZnum^2 Pi)] + 
+                 4 $CellContext`cvvhhn $CellContext`gstn^2 \
+($CellContext`gwn^2 - 4 $CellContext`\[Alpha]EWnum 
+                   Pi) (-($CellContext`gwn^4 ($CellContext`MVzn^2 + \
+$CellContext`MZnum^2) ($CellContext`gwn^2 - 4 $CellContext`\[Alpha]EWnum Pi)) + 
+                   Sqrt[$CellContext`gwn^4 ($CellContext`gwn^2 - 
+                    4 $CellContext`\[Alpha]EWnum 
+                    Pi)^2 ((-4) $CellContext`chn^2 $CellContext`gstn^2 \
+$CellContext`gwn^2 $CellContext`MVzn^2 $CellContext`MZnum^2 + \
+$CellContext`gwn^4 ($CellContext`MVzn^2 - $CellContext`MZnum^2)^2 + 
+                    16 $CellContext`\[Alpha]EWnum $CellContext`chn^2 \
+$CellContext`gstn^2 $CellContext`MVzn^2 $CellContext`MZnum^2 Pi)]))/(
+                2 $CellContext`gwn^4 ($CellContext`gwn^2 - 
+                 4 $CellContext`\[Alpha]EWnum 
+                 Pi) ($CellContext`gwn^4 + $CellContext`chn^2 \
+$CellContext`gstn^2 ($CellContext`gwn^2 - 4 $CellContext`\[Alpha]EWnum 
                    Pi)))]; $CellContext`mVtfunc = 
-              Sqrt[$CellContext`mVn^2 + ($CellContext`cvvhhn \
-$CellContext`gstn^2) $CellContext`vvn^2]; $CellContext`een = 
-              Sqrt[(4 Pi) $CellContext`\[Alpha]EWnum]; $CellContext`swtn = \
+              Sqrt[$CellContext`mVn^2 + $CellContext`cvvhhn \
+$CellContext`gstn^2 $CellContext`vvn^2]; $CellContext`een = 
+              Sqrt[4 Pi $CellContext`\[Alpha]EWnum]; $CellContext`swtn = \
 $CellContext`een/$CellContext`gwn; $CellContext`cwtn = 
               Sqrt[1 - $CellContext`swtn^2]; $CellContext`twtn = \
 $CellContext`swtn/$CellContext`cwtn; $CellContext`gzn = \
 $CellContext`gwn/$CellContext`cwtn; $CellContext`g1n = $CellContext`gwn \
-$CellContext`twtn; $CellContext`MWtn = ((1/
-                 2) $CellContext`gwn) $CellContext`vvn; $CellContext`MZtn = \
+$CellContext`twtn; $CellContext`MWtn = (1/
+                2) $CellContext`gwn $CellContext`vvn; $CellContext`MZtn = \
 $CellContext`MWtn/$CellContext`cwtn; $CellContext`\[Theta]Cn = (1/2) 
-               ArcTan[((($CellContext`chn $CellContext`gstn) \
-$CellContext`gwn) $CellContext`vvn^2)/(
-                 2 (($CellContext`cvvhhn $CellContext`gstn^2) \
+               ArcTan[($CellContext`chn $CellContext`gstn $CellContext`gwn \
+$CellContext`vvn^2)/(
+                 2 ($CellContext`cvvhhn $CellContext`gstn^2 \
 $CellContext`vvn^2 + $CellContext`mVn^2 - $CellContext`MWtn^2))]; \
 $CellContext`sCn = Sin[$CellContext`\[Theta]Cn]; $CellContext`cCn = 
               Cos[$CellContext`\[Theta]Cn]; $CellContext`\[Theta]Nn = (1/2) 
-               ArcTan[((($CellContext`chn $CellContext`gstn) \
-$CellContext`gzn) $CellContext`vvn^2)/(
-                 2 (($CellContext`cvvhhn $CellContext`gstn^2) \
+               ArcTan[($CellContext`chn $CellContext`gstn $CellContext`gzn \
+$CellContext`vvn^2)/(
+                 2 ($CellContext`cvvhhn $CellContext`gstn^2 \
 $CellContext`vvn^2 + $CellContext`mVn^2 - $CellContext`MZtn^2))]; \
 $CellContext`sNn = Sin[$CellContext`\[Theta]Nn]; $CellContext`cNn = 
               Cos[$CellContext`\[Theta]Nn]; $CellContext`MWn = 
-              Sqrt[-
-                  Sqrt[(-(((
-                    16 $CellContext`cvvhhn) $CellContext`gstn^2) \
+              Sqrt[-Sqrt[(-(
+                    16 $CellContext`cvvhhn $CellContext`gstn^2 \
 $CellContext`vvn^2) - 16 $CellContext`mVn^2 - 16 $CellContext`MWtn^2)^2 - 
-                    64 (-((($CellContext`chn^2 $CellContext`gstn^2) \
-$CellContext`gwn^2) $CellContext`vvn^4) + (((
-                    16 $CellContext`cvvhhn) $CellContext`gstn^2) \
-$CellContext`MWtn^2) $CellContext`vvn^2 + (
-                    16 $CellContext`mVn^2) $CellContext`MWtn^2)] + ((
-                    16 $CellContext`cvvhhn) $CellContext`gstn^2) \
+                    
+                    64 (-($CellContext`chn^2 $CellContext`gstn^2 \
+$CellContext`gwn^2 $CellContext`vvn^4) + 
+                    16 $CellContext`cvvhhn $CellContext`gstn^2 \
+$CellContext`MWtn^2 $CellContext`vvn^2 + 
+                    16 $CellContext`mVn^2 $CellContext`MWtn^2)] + 
+                 16 $CellContext`cvvhhn $CellContext`gstn^2 \
 $CellContext`vvn^2 + 16 $CellContext`mVn^2 + 16 $CellContext`MWtn^2]/(4 
                Sqrt[2]); $CellContext`MVcn = 
-              Sqrt[Sqrt[(-(((
-                    16 $CellContext`cvvhhn) $CellContext`gstn^2) \
+              Sqrt[Sqrt[(-(
+                    16 $CellContext`cvvhhn $CellContext`gstn^2 \
 $CellContext`vvn^2) - 16 $CellContext`mVn^2 - 16 $CellContext`MWtn^2)^2 - 
-                   64 (-((($CellContext`chn^2 $CellContext`gstn^2) \
-$CellContext`gwn^2) $CellContext`vvn^4) + (((
-                    16 $CellContext`cvvhhn) $CellContext`gstn^2) \
-$CellContext`MWtn^2) $CellContext`vvn^2 + (
-                    16 $CellContext`mVn^2) $CellContext`MWtn^2)] + ((
-                    16 $CellContext`cvvhhn) $CellContext`gstn^2) \
+                   64 (-($CellContext`chn^2 $CellContext`gstn^2 \
+$CellContext`gwn^2 $CellContext`vvn^4) + 
+                    16 $CellContext`cvvhhn $CellContext`gstn^2 \
+$CellContext`MWtn^2 $CellContext`vvn^2 + 
+                    16 $CellContext`mVn^2 $CellContext`MWtn^2)] + 
+                 16 $CellContext`cvvhhn $CellContext`gstn^2 \
 $CellContext`vvn^2 + 16 $CellContext`mVn^2 + 16 $CellContext`MWtn^2]/(4 
                Sqrt[2]); $CellContext`VzTotWidthn = \
 $CellContext`VzTotWidthnum; $CellContext`VcTotWidthn = \
 $CellContext`VcTotWidthnum; 
-             AppendTo[$CellContext`ScanResultTable, {$CellContext`MVzn, \
+             AppendTo[$CellContext`ScanResultTable8, {$CellContext`MVzn, \
 $CellContext`MVcn, $CellContext`gwn, $CellContext`gstn, $CellContext`chn, \
 $CellContext`cqn, $CellContext`cln, $CellContext`c3n, $CellContext`cvvwn, \
 $CellContext`cvvhhn, $CellContext`cvvvn, $CellContext`VzTotWidthnum, \
@@ -5881,8 +5986,8 @@ $CellContext`VcZWBRnum, $CellContext`VcW\[Gamma]BRnum, \
 $CellContext`VchWBRnum, $CellContext`VcudbarBRnum, $CellContext`VcusbarBRnum, \
 $CellContext`VclnubarBRnum, $CellContext`VctbbarBRnum, \
 $CellContext`CSVpDY8TeVnum, $CellContext`CSV0DY8TeVnum, \
-$CellContext`CSVmDY8TeVnum}]; $CellContext`indicator = $CellContext`indicator + 
-               1; Null]]]]]]], 
+$CellContext`CSVmDY8TeVnum}]; $CellContext`indicator8 = \
+$CellContext`indicator8 + 1; Null]]]]]]], 
       For[$CellContext`MVznum = $CellContext`MVznumscanI, $CellContext`MVznum <= \
 $CellContext`MVznumscanF, 
        AddTo[$CellContext`MVznum, $CellContext`MVznumstep], 
@@ -5924,101 +6029,96 @@ $CellContext`c3num; $CellContext`cvvwn = $CellContext`cvvwnum; \
 $CellContext`cvvhhn = $CellContext`cvvhhnum; $CellContext`cvvvn = \
 $CellContext`cvvvnum; $CellContext`aan = $CellContext`aanum; $CellContext`gwn = \
 $CellContext`gwnum; $CellContext`vvn = 
-                Sqrt[(((
-                    2 $CellContext`gwn^4) ($CellContext`MVzn^2 + \
-$CellContext`MZnum^2)) ($CellContext`gwn^2 - (4 $CellContext`\[Alpha]EWnum) 
-                    Pi) - 2 
-                   Sqrt[($CellContext`gwn^4 ($CellContext`gwn^2 - (
-                    4 $CellContext`\[Alpha]EWnum) 
-                    Pi)^2) ((((((-4) $CellContext`chn^2) $CellContext`gstn^2) \
-$CellContext`gwn^2) $CellContext`MVzn^2) $CellContext`MZnum^2 + \
-$CellContext`gwn^4 ($CellContext`MVzn^2 - $CellContext`MZnum^2)^2 + (((((
-                    16 $CellContext`\[Alpha]EWnum) $CellContext`chn^2) \
-$CellContext`gstn^2) $CellContext`MVzn^2) $CellContext`MZnum^2) 
+                Sqrt[(2 $CellContext`gwn^4 ($CellContext`MVzn^2 + \
+$CellContext`MZnum^2) ($CellContext`gwn^2 - 4 $CellContext`\[Alpha]EWnum Pi) - 
+                   2 Sqrt[$CellContext`gwn^4 ($CellContext`gwn^2 - 
+                    4 $CellContext`\[Alpha]EWnum 
+                    Pi)^2 ((-4) $CellContext`chn^2 $CellContext`gstn^2 \
+$CellContext`gwn^2 $CellContext`MVzn^2 $CellContext`MZnum^2 + \
+$CellContext`gwn^4 ($CellContext`MVzn^2 - $CellContext`MZnum^2)^2 + 
+                    16 $CellContext`\[Alpha]EWnum $CellContext`chn^2 \
+$CellContext`gstn^2 $CellContext`MVzn^2 $CellContext`MZnum^2 
                     Pi)])/($CellContext`gwn^4 ($CellContext`gwn^4 + \
-($CellContext`chn^2 $CellContext`gstn^2) ($CellContext`gwn^2 - (
-                    4 $CellContext`\[Alpha]EWnum) Pi)))]; $CellContext`mVn = 
+$CellContext`chn^2 $CellContext`gstn^2 ($CellContext`gwn^2 - 
+                    4 $CellContext`\[Alpha]EWnum Pi)))]; $CellContext`mVn = 
                 Sqrt[($CellContext`gwn^10 ($CellContext`MVzn^2 + \
-$CellContext`MZnum^2) - (((
-                    4 $CellContext`\[Alpha]EWnum) $CellContext`gwn^8) \
-($CellContext`MVzn^2 + $CellContext`MZnum^2)) 
-                   Pi + ((((
-                    2 $CellContext`chn^2) $CellContext`gstn^2) \
-$CellContext`gwn^4) ($CellContext`MVzn^2 + $CellContext`MZnum^2)) \
-($CellContext`gwn^2 - (4 $CellContext`\[Alpha]EWnum) 
-                    Pi)^2 + $CellContext`gwn^4 
-                    Sqrt[($CellContext`gwn^4 ($CellContext`gwn^2 - (
-                    4 $CellContext`\[Alpha]EWnum) 
-                    Pi)^2) ((((((-4) $CellContext`chn^2) $CellContext`gstn^2) \
-$CellContext`gwn^2) $CellContext`MVzn^2) $CellContext`MZnum^2 + \
-$CellContext`gwn^4 ($CellContext`MVzn^2 - $CellContext`MZnum^2)^2 + (((((
-                    16 $CellContext`\[Alpha]EWnum) $CellContext`chn^2) \
-$CellContext`gstn^2) $CellContext`MVzn^2) $CellContext`MZnum^2) Pi)] + (((
-                    4 $CellContext`cvvhhn) $CellContext`gstn^2) \
-($CellContext`gwn^2 - (4 $CellContext`\[Alpha]EWnum) 
+$CellContext`MZnum^2) - 
+                   4 $CellContext`\[Alpha]EWnum $CellContext`gwn^8 \
+($CellContext`MVzn^2 + $CellContext`MZnum^2) Pi + 
+                   2 $CellContext`chn^2 $CellContext`gstn^2 \
+$CellContext`gwn^4 ($CellContext`MVzn^2 + $CellContext`MZnum^2) \
+($CellContext`gwn^2 - 4 $CellContext`\[Alpha]EWnum Pi)^2 + $CellContext`gwn^4 
+                    Sqrt[$CellContext`gwn^4 ($CellContext`gwn^2 - 
+                    4 $CellContext`\[Alpha]EWnum 
+                    Pi)^2 ((-4) $CellContext`chn^2 $CellContext`gstn^2 \
+$CellContext`gwn^2 $CellContext`MVzn^2 $CellContext`MZnum^2 + \
+$CellContext`gwn^4 ($CellContext`MVzn^2 - $CellContext`MZnum^2)^2 + 
+                    16 $CellContext`\[Alpha]EWnum $CellContext`chn^2 \
+$CellContext`gstn^2 $CellContext`MVzn^2 $CellContext`MZnum^2 Pi)] + 
+                   4 $CellContext`cvvhhn $CellContext`gstn^2 \
+($CellContext`gwn^2 - 4 $CellContext`\[Alpha]EWnum 
+                    Pi) (-($CellContext`gwn^4 ($CellContext`MVzn^2 + \
+$CellContext`MZnum^2) ($CellContext`gwn^2 - 4 $CellContext`\[Alpha]EWnum Pi)) + 
+                    Sqrt[$CellContext`gwn^4 ($CellContext`gwn^2 - 
+                    4 $CellContext`\[Alpha]EWnum 
                     
-                    Pi)) (-(($CellContext`gwn^4 ($CellContext`MVzn^2 + \
-$CellContext`MZnum^2)) ($CellContext`gwn^2 - (4 $CellContext`\[Alpha]EWnum) 
-                    Pi)) + Sqrt[($CellContext`gwn^4 ($CellContext`gwn^2 - (
-                    4 $CellContext`\[Alpha]EWnum) 
-                    Pi)^2) ((((((-4) $CellContext`chn^2) $CellContext`gstn^2) \
-$CellContext`gwn^2) $CellContext`MVzn^2) $CellContext`MZnum^2 + \
-$CellContext`gwn^4 ($CellContext`MVzn^2 - $CellContext`MZnum^2)^2 + (((((
-                    16 $CellContext`\[Alpha]EWnum) $CellContext`chn^2) \
-$CellContext`gstn^2) $CellContext`MVzn^2) $CellContext`MZnum^2) Pi)]))/(((
-                    2 $CellContext`gwn^4) ($CellContext`gwn^2 - (
-                    4 $CellContext`\[Alpha]EWnum) 
-                    Pi)) ($CellContext`gwn^4 + ($CellContext`chn^2 \
-$CellContext`gstn^2) ($CellContext`gwn^2 - (4 $CellContext`\[Alpha]EWnum) 
+                    Pi)^2 ((-4) $CellContext`chn^2 $CellContext`gstn^2 \
+$CellContext`gwn^2 $CellContext`MVzn^2 $CellContext`MZnum^2 + \
+$CellContext`gwn^4 ($CellContext`MVzn^2 - $CellContext`MZnum^2)^2 + 
+                    16 $CellContext`\[Alpha]EWnum $CellContext`chn^2 \
+$CellContext`gstn^2 $CellContext`MVzn^2 $CellContext`MZnum^2 Pi)]))/(
+                  2 $CellContext`gwn^4 ($CellContext`gwn^2 - 
+                   4 $CellContext`\[Alpha]EWnum 
+                   Pi) ($CellContext`gwn^4 + $CellContext`chn^2 \
+$CellContext`gstn^2 ($CellContext`gwn^2 - 4 $CellContext`\[Alpha]EWnum 
                     Pi)))]; $CellContext`mVtfunc = 
-                Sqrt[$CellContext`mVn^2 + ($CellContext`cvvhhn \
-$CellContext`gstn^2) $CellContext`vvn^2]; $CellContext`een = 
-                Sqrt[(4 
-                   Pi) $CellContext`\[Alpha]EWnum]; $CellContext`swtn = \
+                Sqrt[$CellContext`mVn^2 + $CellContext`cvvhhn \
+$CellContext`gstn^2 $CellContext`vvn^2]; $CellContext`een = 
+                Sqrt[4 Pi $CellContext`\[Alpha]EWnum]; $CellContext`swtn = \
 $CellContext`een/$CellContext`gwn; $CellContext`cwtn = 
                 Sqrt[1 - $CellContext`swtn^2]; $CellContext`twtn = \
 $CellContext`swtn/$CellContext`cwtn; $CellContext`gzn = \
 $CellContext`gwn/$CellContext`cwtn; $CellContext`g1n = $CellContext`gwn \
-$CellContext`twtn; $CellContext`MWtn = ((1/
-                   2) $CellContext`gwn) $CellContext`vvn; $CellContext`MZtn = \
+$CellContext`twtn; $CellContext`MWtn = (1/
+                  2) $CellContext`gwn $CellContext`vvn; $CellContext`MZtn = \
 $CellContext`MWtn/$CellContext`cwtn; $CellContext`\[Theta]Cn = (1/2) 
-                 ArcTan[((($CellContext`chn $CellContext`gstn) \
-$CellContext`gwn) $CellContext`vvn^2)/(
-                   2 (($CellContext`cvvhhn $CellContext`gstn^2) \
+                 ArcTan[($CellContext`chn $CellContext`gstn $CellContext`gwn \
+$CellContext`vvn^2)/(
+                   2 ($CellContext`cvvhhn $CellContext`gstn^2 \
 $CellContext`vvn^2 + $CellContext`mVn^2 - $CellContext`MWtn^2))]; \
 $CellContext`sCn = Sin[$CellContext`\[Theta]Cn]; $CellContext`cCn = 
                 Cos[$CellContext`\[Theta]Cn]; $CellContext`\[Theta]Nn = (1/2) 
-                 ArcTan[((($CellContext`chn $CellContext`gstn) \
-$CellContext`gzn) $CellContext`vvn^2)/(
-                   2 (($CellContext`cvvhhn $CellContext`gstn^2) \
+                 ArcTan[($CellContext`chn $CellContext`gstn $CellContext`gzn \
+$CellContext`vvn^2)/(
+                   2 ($CellContext`cvvhhn $CellContext`gstn^2 \
 $CellContext`vvn^2 + $CellContext`mVn^2 - $CellContext`MZtn^2))]; \
 $CellContext`sNn = Sin[$CellContext`\[Theta]Nn]; $CellContext`cNn = 
                 Cos[$CellContext`\[Theta]Nn]; $CellContext`MWn = 
-                Sqrt[-Sqrt[(-(((
-                    16 $CellContext`cvvhhn) $CellContext`gstn^2) \
+                Sqrt[-Sqrt[(-(
+                    16 $CellContext`cvvhhn $CellContext`gstn^2 \
 $CellContext`vvn^2) - 16 $CellContext`mVn^2 - 16 $CellContext`MWtn^2)^2 - 
-                    64 (-((($CellContext`chn^2 $CellContext`gstn^2) \
-$CellContext`gwn^2) $CellContext`vvn^4) + (((
-                    16 $CellContext`cvvhhn) $CellContext`gstn^2) \
-$CellContext`MWtn^2) $CellContext`vvn^2 + (
-                    16 $CellContext`mVn^2) $CellContext`MWtn^2)] + ((
-                    16 $CellContext`cvvhhn) $CellContext`gstn^2) \
+                    64 (-($CellContext`chn^2 $CellContext`gstn^2 \
+$CellContext`gwn^2 $CellContext`vvn^4) + 
+                    16 $CellContext`cvvhhn $CellContext`gstn^2 \
+$CellContext`MWtn^2 $CellContext`vvn^2 + 
+                    16 $CellContext`mVn^2 $CellContext`MWtn^2)] + 
+                   16 $CellContext`cvvhhn $CellContext`gstn^2 \
 $CellContext`vvn^2 + 16 $CellContext`mVn^2 + 16 $CellContext`MWtn^2]/(4 
                  Sqrt[2]); $CellContext`MVcn = 
-                Sqrt[Sqrt[(-(((
-                    16 $CellContext`cvvhhn) $CellContext`gstn^2) \
+                Sqrt[Sqrt[(-(
+                    16 $CellContext`cvvhhn $CellContext`gstn^2 \
 $CellContext`vvn^2) - 16 $CellContext`mVn^2 - 16 $CellContext`MWtn^2)^2 - 
-                    64 (-((($CellContext`chn^2 $CellContext`gstn^2) \
-$CellContext`gwn^2) $CellContext`vvn^4) + (((
-                    16 $CellContext`cvvhhn) $CellContext`gstn^2) \
-$CellContext`MWtn^2) $CellContext`vvn^2 + (
-                    16 $CellContext`mVn^2) $CellContext`MWtn^2)] + ((
-                    16 $CellContext`cvvhhn) $CellContext`gstn^2) \
+                    64 (-($CellContext`chn^2 $CellContext`gstn^2 \
+$CellContext`gwn^2 $CellContext`vvn^4) + 
+                    16 $CellContext`cvvhhn $CellContext`gstn^2 \
+$CellContext`MWtn^2 $CellContext`vvn^2 + 
+                    16 $CellContext`mVn^2 $CellContext`MWtn^2)] + 
+                   16 $CellContext`cvvhhn $CellContext`gstn^2 \
 $CellContext`vvn^2 + 16 $CellContext`mVn^2 + 16 $CellContext`MWtn^2]/(4 
                  Sqrt[2]); $CellContext`VzTotWidthn = \
 $CellContext`VzTotWidthnum; $CellContext`VcTotWidthn = \
 $CellContext`VcTotWidthnum; 
-               AppendTo[$CellContext`ScanResultTable, {$CellContext`MVzn, \
+               AppendTo[$CellContext`ScanResultTable8, {$CellContext`MVzn, \
 $CellContext`MVcn, $CellContext`gwn, $CellContext`gstn, $CellContext`chn, \
 $CellContext`cqn, $CellContext`cln, $CellContext`c3n, $CellContext`cvvwn, \
 $CellContext`cvvhhn, $CellContext`cvvvn, $CellContext`VzTotWidthnum, \
@@ -6030,26 +6130,32 @@ $CellContext`VcZWBRnum, $CellContext`VcW\[Gamma]BRnum, \
 $CellContext`VchWBRnum, $CellContext`VcudbarBRnum, $CellContext`VcusbarBRnum, \
 $CellContext`VclnubarBRnum, $CellContext`VctbbarBRnum, \
 $CellContext`CSVpDY8TeVnum, $CellContext`CSV0DY8TeVnum, \
-$CellContext`CSVmDY8TeVnum}]; $CellContext`indicator = $CellContext`indicator + 
-                 1; Null]]]]]]]]]]; $CellContext`ScanResultTableToPrint = 
-     Cases[$CellContext`ScanResultTable, 
+$CellContext`CSVmDY8TeVnum}]; $CellContext`indicator8 = \
+$CellContext`indicator8 + 1; 
+               Null]]]]]]]]]]; $CellContext`ScanResultTableToPrint8 = 
+     Cases[$CellContext`ScanResultTable8, 
        Table[
         PatternTest[
          Blank[], NumberQ], {$CellContext`i, 1, 
          Length[
-          Part[$CellContext`ScanResultTable, 1]]}]]; Export[
+          Part[$CellContext`ScanResultTable8, 1]]}]]; Export[
       StringJoin[$CellContext`outputfile, $CellContext`filename], 
-      N[$CellContext`ScanResultTableToPrint]]),
+      N[$CellContext`ScanResultTableToPrint8]]),
    Evaluator->Automatic,
-   Method->"Queued"], TraditionalForm]], "Output"],
-
-Cell[BoxData[
- FormBox[
-  ProgressIndicatorBox[Dynamic[$CellContext`indicator8], {1, 
-    Dynamic[$CellContext`totnumberofpoints]}], TraditionalForm]], "Output"],
+   Method->"Queued"], TraditionalForm]], "Output",
+ CellChangeTimes->{3.6144039242299337`*^9, 3.614405883658792*^9, 
+  3.6144090099768887`*^9, 3.614957773047337*^9, 3.614958038580415*^9, 
+  3.614958153910615*^9, 3.615026605634013*^9, 
+  3.7208448507885666`*^9},ExpressionUUID->"032463c0-6839-4fc7-82cc-\
+3f134d365d9e"],
 
 Cell[TextData[StyleBox["",
- FontSize->18]], "Text"],
+ FontSize->18]], "Text",
+ CellChangeTimes->{{3.5997589854680357`*^9, 3.5997590322559023`*^9}, {
+   3.599761788753929*^9, 3.5997617935016727`*^9}, {3.5997622003853807`*^9, 
+   3.599762207076984*^9}, 
+   3.599762916890162*^9},ExpressionUUID->"02a43fcb-7837-465b-99a8-\
+5222b7f89bdd"],
 
 Cell[BoxData[
  FormBox[
@@ -6062,7 +6168,9 @@ Cell[BoxData[
      SystemDialogInput[
       "Directory", WindowTitle -> "Save scan to.."]; $CellContext`filename = 
      StringJoin["scan", 
-       DateString["DateTimeShort"], ".txt"]; $CellContext`MVznumstep = If[
+       StringReplace[
+        DateString["DateTimeShort"], ":" -> "_"], 
+       ".txt"]; $CellContext`MVznumstep = If[
        And[$CellContext`MVznumscanN != 
         0, $CellContext`MVznumscanF - $CellContext`MVznumscanI != 
         0], ($CellContext`MVznumscanF - \
@@ -6138,7 +6246,6 @@ $CellContext`clnumscanI)/$CellContext`clnumstep +
 $CellContext`c3numscanI)/$CellContext`c3numstep + 
           1, ($CellContext`cvvwnumscanF - \
 $CellContext`cvvwnumscanI)/$CellContext`cvvwnumstep + 
-          
           1, ($CellContext`cvvhhnumscanF - \
 $CellContext`cvvhhnumscanI)/$CellContext`cvvhhnumstep + 
           1, ($CellContext`cvvvnumscanF - \
@@ -6210,7 +6317,6 @@ $CellContext`gstn^2 $CellContext`MVzn^2 $CellContext`MZnum^2 Pi)] +
 $CellContext`MZnum^2) ($CellContext`gwn^2 - 4 $CellContext`\[Alpha]EWnum Pi)) + 
                    Sqrt[$CellContext`gwn^4 ($CellContext`gwn^2 - 
                     4 $CellContext`\[Alpha]EWnum 
-                    
                     Pi)^2 ((-4) $CellContext`chn^2 $CellContext`gstn^2 \
 $CellContext`gwn^2 $CellContext`MVzn^2 $CellContext`MZnum^2 + \
 $CellContext`gwn^4 ($CellContext`MVzn^2 - $CellContext`MZnum^2)^2 + 
@@ -6246,6 +6352,7 @@ $CellContext`sNn = Sin[$CellContext`\[Theta]Nn]; $CellContext`cNn =
               Sqrt[-Sqrt[(-(
                     16 $CellContext`cvvhhn $CellContext`gstn^2 \
 $CellContext`vvn^2) - 16 $CellContext`mVn^2 - 16 $CellContext`MWtn^2)^2 - 
+                    
                     64 (-($CellContext`chn^2 $CellContext`gstn^2 \
 $CellContext`gwn^2 $CellContext`vvn^4) + 
                     16 $CellContext`cvvhhn $CellContext`gstn^2 \
@@ -6354,6 +6461,7 @@ $CellContext`gstn^2 $CellContext`MVzn^2 $CellContext`MZnum^2 Pi)] +
 $CellContext`MZnum^2) ($CellContext`gwn^2 - 4 $CellContext`\[Alpha]EWnum Pi)) + 
                     Sqrt[$CellContext`gwn^4 ($CellContext`gwn^2 - 
                     4 $CellContext`\[Alpha]EWnum 
+                    
                     Pi)^2 ((-4) $CellContext`chn^2 $CellContext`gstn^2 \
 $CellContext`gwn^2 $CellContext`MVzn^2 $CellContext`MZnum^2 + \
 $CellContext`gwn^4 ($CellContext`MVzn^2 - $CellContext`MZnum^2)^2 + 
@@ -6391,7 +6499,6 @@ $CellContext`sNn = Sin[$CellContext`\[Theta]Nn]; $CellContext`cNn =
 $CellContext`vvn^2) - 16 $CellContext`mVn^2 - 16 $CellContext`MWtn^2)^2 - 
                     64 (-($CellContext`chn^2 $CellContext`gstn^2 \
 $CellContext`gwn^2 $CellContext`vvn^4) + 
-                    
                     16 $CellContext`cvvhhn $CellContext`gstn^2 \
 $CellContext`MWtn^2 $CellContext`vvn^2 + 
                     16 $CellContext`mVn^2 $CellContext`MWtn^2)] + 
@@ -6435,22 +6542,15 @@ $CellContext`indicator13 + 1;
       StringJoin[$CellContext`outputfile, $CellContext`filename], 
       N[$CellContext`ScanResultTableToPrint13]]),
    Evaluator->Automatic,
-   Method->"Queued"], TraditionalForm]], "Output"],
-
-Cell[BoxData[
- FormBox[
-  ProgressIndicatorBox[Dynamic[$CellContext`indicator13], {1, 
-    Dynamic[$CellContext`totnumberofpoints]}], TraditionalForm]], "Output"]
+   Method->"Queued"], TraditionalForm]], "Output",
+ CellChangeTimes->{3.665383803513453*^9, 
+  3.7208448680477085`*^9},ExpressionUUID->"c08b7956-06fd-4055-b781-\
+a427e94343f7"]
 }, Open  ]]
 },
-WindowSize->{1214, 1369},
-Visible->True,
-ScrollingOptions->{"VerticalScrollRange"->Fit},
-ShowCellBracket->Automatic,
-CellContext->Notebook,
-TrackCellChangeTimes->False,
-FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September 9, \
-2014)",
+WindowSize->{1274, 1348},
+WindowMargins->{{Automatic, -694}, {1118, Automatic}},
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -6465,31 +6565,27 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[1486, 35, 98, 1, 97, "Title"],
-Cell[1587, 38, 300, 5, 81, "Subtitle"],
-Cell[1890, 45, 171, 2, 35, "Text"],
-Cell[2064, 49, 51, 1, 35, "Text"],
-Cell[2118, 52, 258893, 4683, 54, "Output"],
-Cell[261014, 4737, 51, 1, 35, "Text"],
-Cell[261068, 4740, 1312, 30, 92, "Text"],
-Cell[262383, 4772, 51, 1, 35, "Text"],
-Cell[262437, 4775, 1407, 36, 54, "Output"],
-Cell[263847, 4813, 29978, 750, 286, "Output"],
-Cell[293828, 5565, 51, 1, 35, "Text"],
-Cell[293882, 5568, 877, 21, 88, "Text"],
-Cell[294762, 5591, 2785, 50, 34, "Output"],
-Cell[297550, 5643, 196, 3, 59, "Text"],
-Cell[297749, 5648, 51, 1, 35, "Text"],
-Cell[297803, 5651, 22378, 392, 49, "Output"],
-Cell[320184, 6045, 161, 3, 33, "Output"],
-Cell[320348, 6050, 51, 1, 35, "Text"],
-Cell[320402, 6053, 21857, 384, 49, "Output"],
-Cell[342262, 6439, 162, 3, 33, "Output"]
+Cell[1510, 35, 302, 6, 100, "Title",ExpressionUUID->"7c302cea-1770-4a7d-b763-7aa5d919dbb4"],
+Cell[1815, 43, 571, 9, 83, "Subtitle",ExpressionUUID->"62a40c53-b2d4-4659-9972-23b628e46a18"],
+Cell[2389, 54, 448, 7, 38, "Text",ExpressionUUID->"91fd3070-92e5-4f73-83cc-f713f7ad3cfb"],
+Cell[2840, 63, 308, 6, 38, "Text",ExpressionUUID->"939185cd-e613-4067-8d8a-bf3073920890"],
+Cell[3151, 71, 260638, 4718, 59, "Output",ExpressionUUID->"c885f0b6-b5c0-4d8b-950e-3d6e6d57bc5c"],
+Cell[263792, 4791, 308, 6, 38, "Text",ExpressionUUID->"468a1a39-3598-4cad-9022-5549bffcdf86"],
+Cell[264103, 4799, 1963, 41, 94, "Text",ExpressionUUID->"5ce4a133-b431-409a-9c25-74a12409e23f"],
+Cell[266069, 4842, 308, 6, 38, "Text",ExpressionUUID->"8ddd8ffb-c833-4457-b93d-47da3ccd14d5"],
+Cell[266380, 4850, 1531, 39, 56, "Output",ExpressionUUID->"a29d3ca7-bf89-45cb-ab23-66010ecc8684"],
+Cell[267914, 4891, 30152, 754, 259, "Output",ExpressionUUID->"af6b8493-217b-4a5e-966a-04487e94452e"],
+Cell[298069, 5647, 308, 6, 38, "Text",ExpressionUUID->"6346227d-a9bc-4da1-933c-c6df26ca0f74"],
+Cell[298380, 5655, 1378, 30, 91, "Text",ExpressionUUID->"aeb6eaf5-220d-40e4-a48d-3ee801f94310"],
+Cell[299761, 5687, 2939, 54, 36, "Output",ExpressionUUID->"706ed2c4-b114-49ff-89d0-ff53c864674a"],
+Cell[302703, 5743, 324, 6, 38, "Text",ExpressionUUID->"74d71e96-de67-42b4-9c5c-885bb0c364b6"],
+Cell[303030, 5751, 308, 6, 38, "Text",ExpressionUUID->"3acb8047-00bc-4d89-8459-acbf0aa7543a"],
+Cell[303341, 5759, 22139, 390, 54, "Output",ExpressionUUID->"032463c0-6839-4fc7-82cc-3f134d365d9e"],
+Cell[325483, 6151, 308, 6, 38, "Text",ExpressionUUID->"02a43fcb-7837-465b-99a8-5222b7f89bdd"],
+Cell[325794, 6159, 22016, 388, 54, "Output",ExpressionUUID->"c08b7956-06fd-4055-b781-a427e94343f7"]
 }, Open  ]]
 }
 ]
 *)
 
-(* End of internal cache information *)
-
-(* NotebookSignature 9xDSKvV85KufiB10Pl2#pbSh *)
+(* NotebookSignature Ewp2fZKPLJrE5CKnwwr8MITT *)
