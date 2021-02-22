@@ -1,0 +1,42 @@
+Vector Triplet (Bridge model)
+ Parameters
+  Name         | Value       |> Comment                                                                <|
+aEWM1          |127.9        |Inverse electroweak coupling constant at the Z pole                       |
+Gf             |0.0000116637 |Fermi constant                                                            |
+MZ             |91.1876      |Z mass                                                                    |
+gst            |2            |Heavy vector coupling                                                     |
+MVz            |2000         |Neutral heavy vector mass                                                 |
+aS             |0.118        |Strong coupling constant at the Z pole                                    |
+ymc            |1.42         |Charm Yukawa mass                                                         |
+ymb            |4.7          |Bottom Yukawa mass                                                        |
+ymt            |172.9        |Top Yukawa mass                                                           |
+ymtau          |1.777        |Tau Yukawa mass                                                           |
+cpsi           |1.           |Yukawa rescaling                                                          |
+aa             |1.           |Rescaling of the linear Higgs coupling to longitudinal gauge bosons       |
+bb             |1.           |Rescaling of the quadratic Higgs coupling to longitudinal gauge bosons    |
+d3             |1.           |Rescaling of the Higgs cubic interaction                                  |
+d4             |1.           |Rescaling of the Higgs quartic interaction                                |
+cvvw           |1            |Heavy vector coupling VVW                                                 |
+cq             |1            |Heavy vector coupling to 1st and 2nd generation quarks                    |
+cl             |1            |Heavy vector coupling to leptons                                          |
+c3             |1            |Heavy vector coupling to 3rd generation quarks                            |
+ch             |1            |Heavy vector coupling with the Higgs                                      |
+cvvhh          |0            |Heavy vector coupling VVHH                                                |
+cvvv           |1            |Trilinear heavy vector coupling                                           |
+cvvvv          |1            |Quadrilinear heavy vector coupling VVHH                                   |
+cabi           |0.22759      |Cabibbo angle                                                             |
+GG             |1.21771578477|Strong coupling constant   This value will be ignored and calculated from |
+MTA            |1.777        |Mass of tt.                                                               |
+MC             |1.42         |Mass of c.                                                                |
+MT             |172.9        |Mass of t.                                                                |
+MB             |4.7          |Mass of b.                                                                |
+MH             |125.5        |Mass of h.                                                                |
+MZ             |91.1876      |Mass of Z.                                                                |
+%WT            |1.50833649   |Width of t.                                                               |
+%WH            |0.00575308848|Width of h.                                                               |
+%WZ            |2.44140351   |Width of Z.                                                               |
+%WW            |2.04759951   |Width of W.                                                               |
+%WVz           |35.3575      |Width of Vz.                                                              |
+%WVc           |35.3603      |Width of Vc.                                                              |
+E              |2.71828182845|The base of the natural logarithm.                                        |
+Pi             |3.14159265358|The circumference of a circle divided by the diameter.                    |

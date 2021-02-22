@@ -1,0 +1,388 @@
+(*************************************************************************************)
+(************************* FeynRules model file for **********************************)
+(********************* the Vector Triplet (Bridge model) *****************************)
+(***************************** Riccardo Torre ****************************************)
+(*************************************************************************************)
+
+
+(*************************************************************************************)
+(*******************************  Parameters *****************************************)
+(*************************************************************************************)
+M$Parameters = {
+
+  (* External parameters *)
+
+  aEWM1== {
+        ParameterType -> External,
+        BlockName -> SMINPUTS,
+        ParameterName -> aEWM1,
+        InteractionOrder -> {QED, -2},
+     	TeX -> Superscript[Subscript[\[Alpha], EW],"-1"], 
+        Value -> 127.9,
+        Description -> "Inverse electroweak coupling constant at the Z pole"},
+
+  Gf == {
+	    ParameterType    -> External,
+	    BlockName        -> SMINPUTS,
+	    Value            -> 1.16637*^-5, 
+	    InteractionOrder -> {QED,2},
+	    TeX              -> Subscript[G,f],
+	    Description      -> "Fermi constant"},
+
+  gst == {
+        TeX -> Subscript[g, st],
+        ParameterType -> External,
+        BlockName -> RHOINPUTS,
+        InteractionOrder -> {QED, 1},
+        Value -> 2,
+        Description -> "Heavy vector coupling"},
+	
+  MVz == {
+        TeX -> Subscript[M, Superscript[V,"0"]],
+        ParameterType -> External,
+        BlockName -> RHOINPUTS,
+        Value -> 2000,
+        ComplexParameter -> False,
+	    Description -> "Neutral heavy vector mass"},
+
+  \[Alpha]S == {
+        ParameterType -> External,
+        BlockName -> SMINPUTS,
+        ParameterName -> aS,
+        InteractionOrder -> {QCD, 2},
+        Value -> 0.118,
+        Description -> "Strong coupling constant at the Z pole"},
+
+  ymc == {
+        ParameterType -> External,
+        BlockName -> YUKAWA,
+        Value -> 1.42,
+        OrderBlock -> {4},
+        Description -> "Charm Yukawa mass"},
+
+  ymb == {
+        ParameterType -> External,
+        BlockName -> YUKAWA,
+        Value -> 4.7,
+        OrderBlock -> {5},
+        Description -> "Bottom Yukawa mass"},
+
+  ymt == {
+        ParameterType -> External,
+        BlockName -> YUKAWA,
+        Value -> 172.9,
+        OrderBlock -> {6},
+        Description -> "Top Yukawa mass"},
+
+  ymtau == {
+        ParameterType -> External,
+        BlockName -> YUKAWA,
+        Value -> 1.777,
+        OrderBlock -> {15},
+        Description -> "Tau Yukawa mass"},
+
+  cpsi == {
+        ParameterType -> External,
+        BlockName -> CHINPUTS,
+        Value -> 1.0,
+        Description -> "Yukawa rescaling"},
+
+  aa == {
+        TeX -> a,
+        ParameterType -> External,
+        BlockName -> CHINPUTS,
+        Value -> 1.0,
+        Description -> "Rescaling of the linear Higgs coupling to longitudinal gauge bosons"},
+
+  bb == {
+        TeX -> b,
+        ParameterType -> External,
+        BlockName -> CHINPUTS,
+        Value -> 1.0,
+        Description -> "Rescaling of the quadratic Higgs coupling to longitudinal gauge bosons"},
+
+  d3 == {
+        ParameterType -> External,
+        BlockName -> CHINPUTS,
+        Value -> 1.0,
+        Description -> "Rescaling of the Higgs cubic interaction"},
+
+  d4 == {
+        ParameterType -> External,
+        BlockName -> CHINPUTS,
+        Value -> 1.0,
+        Description -> "Rescaling of the Higgs quartic interaction"},
+
+  cvvw == {
+        ParameterType -> External,
+        BlockName -> RHOINPUTS,
+        Value -> 1,
+        Description -> "Heavy vector coupling VVW"},
+
+  cq == {
+        ParameterType -> External,
+        BlockName -> RHOINPUTS,
+        Value -> 1,
+        Description -> "Heavy vector coupling to 1st and 2nd generation quarks"},
+
+  cl == {
+        ParameterType -> External,
+        BlockName -> RHOINPUTS,
+        Value -> 1,
+        Description -> "Heavy vector coupling to leptons"},
+
+  c3 == {
+        ParameterType -> External,
+        BlockName -> RHOINPUTS,
+        Value -> 1,
+        Description -> "Heavy vector coupling to 3rd generation quarks"},
+
+  ch == {
+        ParameterType -> External,
+        BlockName -> RHOINPUTS,
+        Value -> 1,
+        Description -> "Heavy vector coupling with the Higgs"},
+
+  cvvhh == {
+        ParameterType -> External,
+        BlockName -> RHOINPUTS,
+        Value -> 0,
+        Description -> "Heavy vector coupling VVHH"},
+
+  cvvv == {
+        ParameterType -> External,
+        BlockName -> RHOINPUTS,
+        Value -> 1,
+        Description -> "Trilinear heavy vector coupling"},
+
+  cvvvv == {
+        ParameterType -> External,
+        BlockName -> RHOINPUTS,
+        Value -> 1,
+        Description -> "Quadrilinear heavy vector coupling VVHH"},
+
+   (* Internal Parameters *)
+
+  aEW == {
+        ParameterType -> Internal,
+        Value -> 1/aEWM1,
+        ParameterName -> aEW,
+        InteractionOrder -> {QED, 2},
+     	TeX -> Subscript[\[Alpha], EW], 
+        Description -> "Electroweak coupling constant at the Z pole"},
+
+  gw == {
+	    TeX -> Subscript[g, w],
+	    ParameterType -> Internal,
+	    ParameterName -> gw,
+	    Value -> Sqrt[(2*(gst^4*MVz^4*(Sqrt[2]*Gf^4*MZ^8 - 8*aEW*Gf^3*MZ^6*Pi + 8*Sqrt[2]*aEW^2*Gf^2*MZ^4*Pi^2 - 
+		     8*aEW*Pi*Sqrt[Gf^5*MZ^10*(Gf*MZ^2 - 2*Sqrt[2]*aEW*Pi)] + Sqrt[2]*Sqrt[Gf^7*MZ^14*(Gf*MZ^2 - 2*Sqrt[2]*aEW*Pi)] + 
+		     8*Sqrt[2]*aEW^2*Gf*Pi^2*(Gf^2*MZ^12*(Gf^2*MZ^4 - 4*Sqrt[2]*aEW*Gf*MZ^2*Pi + 8*aEW^2*Pi^2))^(1/4)) - 
+		   8*cl^2*gst^2*MVz^2*(Gf^5*MZ^12 - 5*Sqrt[2]*aEW*Gf^4*MZ^10*Pi + 16*aEW^2*Gf^3*MZ^8*Pi^2 - 8*Sqrt[2]*aEW^3*Gf^2*MZ^6*Pi^3 + 
+		     Sqrt[Gf^9*MZ^22*(Gf*MZ^2 - 2*Sqrt[2]*aEW*Pi)] + aEW*Pi*(-4*Sqrt[2]*Sqrt[Gf^7*MZ^18*(Gf*MZ^2 - 2*Sqrt[2]*aEW*Pi)] + 
+		       aEW*Pi*(-2*Sqrt[2]*aEW*Pi*Sqrt[Gf^3*MZ^10*(Gf*MZ^2 - 2*Sqrt[2]*aEW*Pi)] + 
+		         9*Sqrt[Gf^5*MZ^14*(Gf*MZ^2 - 2*Sqrt[2]*aEW*Pi)]))) + 4*ch^2*cl^2*gst^4*(Sqrt[2]*Gf^4*MZ^12 - 9*aEW*Gf^3*MZ^10*Pi + 
+		     12*Sqrt[2]*aEW^2*Gf^2*MZ^8*Pi^2 - 8*aEW^3*Gf*MZ^6*Pi^3 + Sqrt[2]*Sqrt[Gf^7*MZ^22*(Gf*MZ^2 - 2*Sqrt[2]*aEW*Pi)] - 
+		     aEW*Pi*(7*Sqrt[Gf^5*MZ^18*(Gf*MZ^2 - 2*Sqrt[2]*aEW*Pi)] + 
+		       aEW*Pi*(-6*Sqrt[2]*Sqrt[Gf^3*MZ^14*(Gf*MZ^2 - 2*Sqrt[2]*aEW*Pi)] + 
+		         aEW*MZ^2*Pi*(Gf^2*MZ^12*(Gf^2*MZ^4 - 4*Sqrt[2]*aEW*Gf*MZ^2*Pi + 8*aEW^2*Pi^2))^(1/4)))) + 
+		   16*cl^4*(4*Sqrt[2]*Gf^6*MZ^16 - 44*aEW*Gf^5*MZ^14*Pi + 83*Sqrt[2]*aEW^2*Gf^4*MZ^12*Pi^2 - 120*aEW^3*Gf^3*MZ^10*Pi^3 + 
+		     24*Sqrt[2]*aEW^4*Gf^2*MZ^8*Pi^4 + 4*Sqrt[2]*Sqrt[Gf^11*MZ^30*(Gf*MZ^2 - 2*Sqrt[2]*aEW*Pi)] + 
+		     aEW*Pi*(-36*Sqrt[Gf^9*MZ^26*(Gf*MZ^2 - 2*Sqrt[2]*aEW*Pi)] + 
+		       aEW*Pi*(51*Sqrt[2]*Sqrt[Gf^7*MZ^22*(Gf*MZ^2 - 2*Sqrt[2]*aEW*Pi)] + 
+		         aEW*Pi*(3*Sqrt[2]*aEW*Pi*Sqrt[Gf^3*MZ^14*(Gf*MZ^2 - 2*Sqrt[2]*aEW*Pi)] - 
+		           46*Sqrt[Gf^5*MZ^18*(Gf*MZ^2 - 2*Sqrt[2]*aEW*Pi)])))) - 
+		   2*ch*cl*gst^2*(-(gst^2*MVz^2*(Sqrt[2]*Gf^4*MZ^10 - 9*aEW*Gf^3*MZ^8*Pi + 12*Sqrt[2]*aEW^2*Gf^2*MZ^6*Pi^2 - 
+		        8*aEW^3*Gf*MZ^4*Pi^3 + Sqrt[2]*Sqrt[Gf^7*MZ^18*(Gf*MZ^2 - 2*Sqrt[2]*aEW*Pi)] + 
+		        aEW*Pi*(6*Sqrt[2]*aEW*Pi*Sqrt[Gf^3*MZ^10*(Gf*MZ^2 - 2*Sqrt[2]*aEW*Pi)] - 
+		          7*Sqrt[Gf^5*MZ^14*(Gf*MZ^2 - 2*Sqrt[2]*aEW*Pi)]))) + 4*cl^2*(6*Gf^5*MZ^14 - 30*Sqrt[2]*aEW*Gf^4*MZ^12*Pi + 
+		       97*aEW^2*Gf^3*MZ^10*Pi^2 - 52*Sqrt[2]*aEW^3*Gf^2*MZ^8*Pi^3 + 8*aEW^4*Gf*MZ^6*Pi^4 + 
+		       6*Sqrt[Gf^9*MZ^26*(Gf*MZ^2 - 2*Sqrt[2]*aEW*Pi)] + aEW*Pi*(-24*Sqrt[2]*Sqrt[Gf^7*MZ^22*(Gf*MZ^2 - 2*Sqrt[2]*aEW*Pi)] + 
+		         5*aEW*Pi*(-3*Sqrt[2]*aEW*Pi*Sqrt[Gf^3*MZ^14*(Gf*MZ^2 - 2*Sqrt[2]*aEW*Pi)] + 
+		           11*Sqrt[Gf^5*MZ^18*(Gf*MZ^2 - 2*Sqrt[2]*aEW*Pi)]))))))/(Gf*gst^4*MVz^4*MZ^2*(Gf*MZ^2 - 2*Sqrt[2]*aEW*Pi)^2)],
+	    InteractionOrder -> {QED, 1},
+	    Description -> "Weak coupling"},
+
+  vv == {
+        TeX -> OverTilde[v],
+        ParameterType -> Internal,
+        Value -> Sqrt[(2*gw^4*(MVz^2 + MZ^2)*(gw^2 - 4*aEW*Pi) - 
+		  2*Sqrt[gw^4*(gw^2 - 4*aEW*Pi)^2*(-4*ch^2*gst^2*gw^2*MVz^2*MZ^2 + gw^4*(MVz^2 - MZ^2)^2 + 16*aEW*ch^2*gst^2*MVz^2*MZ^2*Pi)])/
+		 (gw^4*(gw^4 + ch^2*gst^2*(gw^2 - 4*aEW*Pi)))],
+        InteractionOrder -> {QED, -1},
+        Description -> "Higgs vacuum expectation value"},
+
+  mV == {
+        TeX -> Subscript[m,V],
+        ParameterType -> Internal,
+        Value -> Sqrt[(gw^10*(MVz^2 + MZ^2) - 4*aEW*gw^8*(MVz^2 + MZ^2)*Pi + 2*ch^2*gst^2*gw^4*(MVz^2 + MZ^2)*(gw^2 - 4*aEW*Pi)^2 + 
+		  gw^4*Sqrt[gw^4*(gw^2 - 4*aEW*Pi)^2*(-4*ch^2*gst^2*gw^2*MVz^2*MZ^2 + gw^4*(MVz^2 - MZ^2)^2 + 
+		      16*aEW*ch^2*gst^2*MVz^2*MZ^2*Pi)] + 4*cvvhh*gst^2*(gw^2 - 4*aEW*Pi)*(-(gw^4*(MVz^2 + MZ^2)*(gw^2 - 4*aEW*Pi)) + 
+		    Sqrt[gw^4*(gw^2 - 4*aEW*Pi)^2*(-4*ch^2*gst^2*gw^2*MVz^2*MZ^2 + gw^4*(MVz^2 - MZ^2)^2 + 16*aEW*ch^2*gst^2*MVz^2*MZ^2*Pi)]))/
+		 (2*gw^4*(gw^2 - 4*aEW*Pi)*(gw^4 + ch^2*gst^2*(gw^2 - 4*aEW*Pi)))],
+        Description -> "Lagrangian mass parameter for the heavy vector"},
+
+  ee == {
+        TeX -> e,
+        ParameterType -> Internal,
+        Value -> Sqrt[4 Pi aEW],
+        InteractionOrder -> {QED, 1},
+        Description -> "Electric coupling constant"},
+
+  swt == {
+        TeX -> Subscript[OverTilde[s], w],
+        ParameterType -> Internal,
+        Value -> ee/gw,
+        Description -> "Sin of the Weinberg angle (tilde)"},
+
+  cwt == {
+        TeX -> Subscript[OverTilde[c], w],
+        ParameterType -> Internal,
+        Value -> Sqrt[1 - swt^2],
+        Description -> "Cos of the Weinberg angle (tilde)"},
+
+  twt == {
+        TeX -> Subscript[OverTilde[t], w],
+        ParameterType -> Internal,
+        Value -> swt/cwt,
+        Description -> "Tan of the Weinberg angle (tilde)"},
+
+  gz == {
+        TeX -> Subscript[g, z],
+        ParameterType -> Internal,
+        Value -> gw/cwt,
+        InteractionOrder -> {QED, 1},
+        Description -> "Z coupling"},
+
+  g1 == {
+        TeX -> Subscript[g, 1],
+        ParameterType -> Internal,
+        Value -> gw twt,
+        InteractionOrder -> {QED, 1},
+        Description -> "U(1)Y coupling"},
+	
+  MWt ==	{
+        TeX -> Subscript[OverTilde[M], W],
+        ParameterType -> Internal,
+	    Value -> gw vv /2,
+	    Description -> "W mass tilde"},
+	
+  MZt ==	{
+        TeX -> Subscript[OverTilde[M], Z],
+        ParameterType -> Internal,
+	    Value -> MWt/cwt,
+	    Description -> "Z mass tilde"},
+	
+  thC == {
+        TeX -> Subscript[\[Theta], C],
+        ParameterType -> Internal,
+        Value -> ArcTan[(ch*gst*gw*vv^2)/(2*(-MWt^2 + mV^2 + cvvhh*gst^2*vv^2))]/2,
+        Description -> "Mixing angle in the charged sector"},
+
+  sC == {
+        TeX -> Subscript[s, C],
+        ParameterType -> Internal,
+        Value -> Sin[thC],
+        Description -> "Sin of the mixing angle in the charged sector"},
+
+  cC == {
+        TeX -> Subscript[c, C],
+        ParameterType -> Internal,
+        Value -> Cos[thC],
+        Description -> "Cos of the mixing angle in the charged sector"},
+
+  thN == {
+        TeX -> Subscript[\[Theta], N],
+        ParameterType -> Internal,
+        Value -> ArcTan[(ch*gst*gz*vv^2)/(2*(-MZt^2 + mV^2 + cvvhh*gst^2*vv^2))]/2,
+        InteractionOrder -> {QED, 1},
+        Description -> "Mixing angle in the neutral sector"},
+
+  sN == {
+        TeX -> Subscript[s,N],
+        ParameterType -> Internal,
+        Value -> Sin[thN],
+        Description -> "Sin of the mixing angle in the neutral sector"},
+
+  cN == {
+        TeX -> Subscript[c,N],
+        ParameterType -> Internal,
+        Value -> Cos[thN],
+        Description -> "Cos of the mixing angle in the neutral sector"},
+
+  MW == {
+        TeX -> Subscript[M, W],
+        ParameterType -> Internal,
+        Value -> Sqrt[16*MWt^2 + 16*mV^2 + 16*cvvhh*gst^2*vv^2 - Sqrt[(-16*MWt^2 - 16*mV^2 - 16*cvvhh*gst^2*vv^2)^2 - 
+		     64*(16*MWt^2*mV^2 + 16*cvvhh*gst^2*MWt^2*vv^2 - ch^2*gst^2*gw^2*vv^4)]]/(4*Sqrt[2]),
+        Description -> "W mass"},
+
+  MVc == {
+        TeX -> Subscript[M, Superscript[V,"+"]],
+        ParameterType -> Internal,
+        Value -> Sqrt[16*MWt^2 + 16*mV^2 + 16*cvvhh*gst^2*vv^2 + Sqrt[(-16*MWt^2 - 16*mV^2 - 16*cvvhh*gst^2*vv^2)^2 - 
+		     64*(16*MWt^2*mV^2 + 16*cvvhh*gst^2*MWt^2*vv^2 - ch^2*gst^2*gw^2*vv^4)]]/(4*Sqrt[2]),
+	    Description -> "Charged heavy vector mass"},
+
+  gs == {
+        TeX -> Subscript[g, s],
+        ParameterType -> Internal,
+        Value -> Sqrt[4 Pi \[Alpha]S],
+        InteractionOrder -> {QCD, 1},
+        ParameterName -> G,
+        Description -> "Strong coupling constant"},
+
+   yl == {
+        Indices -> {Index[Generation]},
+        AllowSummation -> True,
+        ParameterType -> Internal,
+        Value -> {yl[1] -> 0, yl[2] -> 0, yl[3] -> Sqrt[2] ymtau / vv},
+        ParameterName -> {yl[1] -> ye, yl[2] -> ym, yl[3] -> ytau},
+        InteractionOrder -> {QED, 1},
+        ComplexParameter -> False,
+        Definitions -> {yl[1] -> 0, yl[2] ->0},
+        Description -> "Lepton Yukawa coupling"},
+
+   yu == {
+        Indices -> {Index[Generation]},
+        AllowSummation -> True,
+        ParameterType -> Internal,
+        Value -> {yu[1] -> 0, yu[2] -> Sqrt[2] ymc / vv, yu[3] -> Sqrt[2] ymt / vv},
+        ParameterName -> {yu[1] -> yu, yu[2] -> yc, yu[3] -> yt},
+        InteractionOrder -> {QED, 1},
+        ComplexParameter -> False,
+        Definitions -> {yu[1] -> 0},
+        Description -> "U-quark Yukawa coupling"},
+
+   yd == {
+        Indices -> {Index[Generation]},
+        AllowSummation -> True,
+        ParameterType -> Internal,
+        Value -> {yd[1] -> 0, yd[2] -> 0, yd[3] -> Sqrt[2] ymb / vv},
+        ParameterName -> {yd[1] -> yd, yd[2] -> ys, yd[3] -> yb},
+        InteractionOrder -> {QED, 1},
+        ComplexParameter -> False,
+        Definitions -> {yd[1] -> 0, yd[2] -> 0},
+        Description -> "D-quark Yukawa coupling"},
+
+   cabi == {
+        TeX -> Subscript[\[Theta], cab],
+        ParameterType -> External,
+        BlockName -> CKMBLOCK,
+        OrderBlock -> {1},
+        Value -> 0.22759,
+        Description -> "Cabibbo angle"},
+
+   CKM == {
+       Indices -> {Index[Generation], Index[Generation]},
+       TensorClass -> CKM,
+       Unitary -> True,
+       Definitions -> {	CKM[3, 3] -> 1,
+                       	CKM[i_, 3] :> 0 /; i != 3,
+                       	CKM[3, i_] :> 0 /; i != 3},
+       Value -> {	CKM[1,2] -> Sin[cabi],
+                   	CKM[1,1] -> Cos[cabi],
+                   	CKM[2,1] -> -Sin[cabi],
+                   	CKM[2,2] -> Cos[cabi]},
+       Description -> "CKM-Matrix"}
+}

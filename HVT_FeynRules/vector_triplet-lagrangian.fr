@@ -1,0 +1,157 @@
+(*************************************************************************************)
+(************************* FeynRules model file for **********************************)
+(********************* the Vector Triplet (Bridge model) *****************************)
+(***************************** Riccardo Torre ****************************************)
+(*************************************************************************************)
+
+
+(*************************************************************************************)
+(********************************* Lagrangian ****************************************)
+(*************************************************************************************)
+
+
+(*************************************************************************************)
+(************************** Gauge Bosons kinetic terms *******************************)
+(*************************************************************************************)
+LGauge := Module[{FSU3,FSU2,FU1,LSU3,LSU2,LU1},
+
+	(*********** FSU3*)
+	FSU3[\[Mu]_,\[Nu]_,a_] := Module[{b,c},
+			del[G[\[Nu], a], \[Mu]] - del[G[\[Mu], a], \[Nu]] + gs f[a, b, c] G[\[Mu], b] G[\[Nu], c]
+		];	
+	LSU3 := -1/4 FSU3[\[Mu],\[Nu],a] FSU3[\[Mu],\[Nu],a];
+	
+	(*********** FSU2L*)
+	FSU2L[\[Mu]_,\[Nu]_,a_] := Module[{b,c},
+			del[Wi[\[Nu],a],\[Mu]]-del[Wi[\[Mu],a],\[Nu]] + gw Eps[a,b,c] Wi[\[Mu],b] Wi[\[Nu],c]
+		];
+	LSU2L := -1/4 FSU2L[\[Mu],\[Nu],a] FSU2L[\[Mu],\[Nu],a];
+	
+	(*********** FSU2H*)
+	FSU2H[\[Mu]_,\[Nu]_,a_] := 
+			del[Vi[\[Nu],a],\[Mu]]-del[Vi[\[Mu],a],\[Nu]] + Sum[gw Eps[a,b,c] Wi[\[Mu],b] Vi[\[Nu],c] - gw Eps[a,b,c] Wi[\[Nu],b] Vi[\[Mu],c],{b,1,3},{c,1,3}];
+	LSU2H := -1/4 Sum[FSU2H[\[Mu],\[Nu],a] FSU2H[\[Mu],\[Nu],a],{a,1,3}];
+	
+	(*********** FU1*)
+	FU1[\[Mu]_,\[Nu]_] := del[B[\[Nu]],\[Mu]]-del[B[\[Mu]],\[Nu]];
+	LU1 := -1/4 FU1[\[Mu],\[Nu]] FU1[\[Mu],\[Nu]];
+		
+	(*********** LGauge*)
+	LSU3 + LSU2L + LSU2H + LU1
+];
+	
+(*************************************************************************************)
+(***************************** Fermion Lagrangian ************************************)
+(*************************************************************************************)
+LFermions = Module[{Lkin, LQCD, LBright, LBleft, LWleft},
+
+	(*********** Kinetic *)
+	Lkin =	I uqbar.Ga[\[Mu]].del[uq, \[Mu]] + 
+    	   	I dqbar.Ga[\[Mu]].del[dq, \[Mu]] + 
+    	   	I lbar.Ga[\[Mu]].del[l, \[Mu]] + 
+    	   	I vlbar.Ga[\[Mu]].del[vl, \[Mu]];
+
+	(*********** QCD *)
+    LQCD = 	gs (uqbar.Ga[\[Mu]].T[a].uq + dqbar.Ga[\[Mu]].T[a].dq)G[\[Mu], a];
+
+	(*********** B-right *)    
+	LBright = 
+     		-2ee/cwt B[\[Mu]]/2 lbar.Ga[\[Mu]].ProjP.l +      	  		(*Y_lR=-2*)
+    		4ee/3/cwt B[\[Mu]]/2 uqbar.Ga[\[Mu]].ProjP.uq -    	   		(*Y_uR=4/3*)
+    		2ee/3/cwt B[\[Mu]]/2 dqbar.Ga[\[Mu]].ProjP.dq;     	   		(*Y_dR=-2/3*)
+
+	(*********** B-left *)
+    LBleft = 
+     		-ee/cwt B[\[Mu]]/2 vlbar.Ga[\[Mu]].ProjM.vl -          		(*Y_LL=-1*)
+    		ee/cwt B[\[Mu]]/2 lbar.Ga[\[Mu]].ProjM.l  +            		(*Y_LL=-1*)
+    		ee/3/cwt B[\[Mu]]/2 uqbar.Ga[\[Mu]].ProjM.uq +         		(*Y_QL=1/3*)
+    		ee/3/cwt B[\[Mu]]/2 dqbar.Ga[\[Mu]].ProjM.dq ;         		(*Y_QL=1/3*)
+	
+	(*********** W-left *)
+	LWleft = ee/swt/2(
+	   		vlbar.Ga[\[Mu]].ProjM.vl Wi[\[Mu], 3] -           		    (*\[Sigma]3 = ( 1   0 )*)
+    		lbar.Ga[\[Mu]].ProjM.l Wi[\[Mu], 3] +               	    (*            ( 0  -1 )*)
+    	
+    		Sqrt[2] vlbar.Ga[\[Mu]].ProjM.l Wel[\[Mu]] +
+    		Sqrt[2] lbar.Ga[\[Mu]].ProjM.vl Welbar[\[Mu]]+
+    	
+    		uqbar.Ga[\[Mu]].ProjM.uq Wi[\[Mu], 3] -             	    (*\[Sigma]3 = ( 1   0 )*)
+    		dqbar.Ga[\[Mu]].ProjM.dq Wi[\[Mu], 3] +             	    (*            ( 0  -1 )*)
+    	
+    		Sqrt[2] uqbar.Ga[\[Mu]].ProjM.CKM.dq Wel[\[Mu]] +
+    		Sqrt[2] dqbar.Ga[\[Mu]].ProjM.HC[CKM].uq Welbar[\[Mu]]);
+
+	(*********** W-left *)
+	LVleft = gw^2/gst/2(
+			cl vlbar.Ga[\[Mu]].ProjM.vl Vi[\[Mu], 3] -                  (*\[Sigma]3 = ( 1   0 )*)
+    		cl lbar.Ga[\[Mu]].ProjM.l Vi[\[Mu], 3] +                    (*            ( 0  -1 )*)
+
+    		cl Sqrt[2] vlbar.Ga[\[Mu]].ProjM.l Vcel[\[Mu]] +
+    		cl Sqrt[2] lbar.Ga[\[Mu]].ProjM.vl Vcelbar[\[Mu]]+
+
+    		cq uqbar.Ga[\[Mu]].ProjM.uq Vi[\[Mu], 3] -                  (*\[Sigma]3 = ( 1   0 )*)
+    		cq dqbar.Ga[\[Mu]].ProjM.dq Vi[\[Mu], 3] +                  (*            ( 0  -1 )*)
+
+    		cq Sqrt[2] uqbar.Ga[\[Mu]].ProjM.CKM.dq Vcel[\[Mu]] +
+    		cq Sqrt[2] dqbar.Ga[\[Mu]].ProjM.HC[CKM].uq Vcelbar[\[Mu]] +
+
+    		(c3-cq) tbar.Ga[\[Mu]].ProjM.t Vi[\[Mu], 3] -               (*\[Sigma]3 = ( 1   0 )*)
+    		(c3-cq) bbar.Ga[\[Mu]].ProjM.b Vi[\[Mu], 3] +               (*            ( 0  -1 )*)
+
+    		(c3-cq) Sqrt[2] tbar.Ga[\[Mu]].ProjM.b Vcel[\[Mu]] +
+    		(c3-cq) Sqrt[2] bbar.Ga[\[Mu]].ProjM.t Vcelbar[\[Mu]]);
+
+	(*********** LFermions*)
+	Lkin + LQCD + LBright + LBleft + LWleft + LVleft
+];
+
+
+(*************************************************************************************)
+(***************************** Yukawa Lagrangian *************************************)
+(*************************************************************************************)
+LYuk := Module[{s,r,n,m,i},                   
+	    	- yd[n] vv/Sqrt[2]    dqbar[s,n,i].ProjP[s,r].dq[r,n,i] (1+cpsi h/vv)
+			- yu[n] vv/Sqrt[2]    uqbar[s,n,i].ProjP[s,r].uq[r,n,i] (1+cpsi h/vv)   
+	    	- yl[n] vv/Sqrt[2]    lbar[s,n].ProjP[s,r].l[r,n]       (1+cpsi h/vv)
+	];
+
+(*********** LFermions*)
+LYukawa := LYuk + HC[LYuk];
+
+	
+(*************************************************************************************)
+(******************************* Higgs Lagrangian ************************************)
+(*************************************************************************************)
+LHiggs := Module[{LWZmass,LmVass,LMix,LHpot},
+	LWZmass = (MWt^2 Wel[\[Mu]] Welbar[\[Mu]]+1/2 MZt^2 Zel[\[Mu]] Zel[\[Mu]]) (1+2*aa*h/vv+bb*h^2/(vv^2));
+  	LmVass = mV^2/2 Vi[\[Mu], i] Vi[\[Mu], i] + gst^2/2 cvvhh (h+vv)^2 Vi[\[Mu], i] Vi[\[Mu], i] ;
+  	LMix = ch/4 gw gst (h+vv)^2 (Vcel[\[Mu]] Welbar[\[Mu]]+Vcelbar[\[Mu]] Wel[\[Mu]])+ ch/4 gz gst (h+vv)^2 (Vzel[\[Mu]] Zel[\[Mu]]);
+	LHpot = 1/2 MH^2 h^2+d3 MH^2/(2*vv) h^3+d4 MH^2/(8*vv^2) h^4;
+	LWZmass + LmVass + LMix + LHpot ];
+		  
+
+(*************************************************************************************)
+(****************************** Vector Lagrangian ************************************)
+(*************************************************************************************)
+LVector := Module[{FSU2,FSU2H},
+	FSU2L[\[Mu]_,\[Nu]_,a_] := Module[{b,c},
+		del[Wi[\[Nu],a],\[Mu]]-del[Wi[\[Mu],a],\[Nu]] + gw Eps[a,b,c] Wi[\[Mu],b] Wi[\[Nu],c]
+		];
+	FSU2H[\[Mu]_,\[Nu]_,a_] := 
+		del[Vi[\[Nu],a],\[Mu]]-del[Vi[\[Mu],a],\[Nu]] + Sum[gw Eps[a,b,c] Wi[\[Mu],b] Vi[\[Nu],c]-gw Eps[a,b,c] Wi[\[Nu],b] Vi[\[Mu],c],{b,1,3},{c,1,3}];
+	 -gw/2 cvvw Sum[Eps[a,b,c] FSU2L[\[Mu],\[Nu],a] Vi[\[Mu],b] Vi[\[Nu],c],{a,1,3},{b,1,3},{c,1,3}] + gst/2 cvvv Module[{a,b,c}, Eps[a,b,c] FSU2H[\[Mu],\[Nu],a] Vi[\[Mu],b] Vi[\[Nu],c]] + gst^2 cvvvv Module[{a,b,c,d,e}, Eps[a,b,e] Eps[c,d,e] Vi[\[Mu],a] Vi[\[Nu],b] Vi[\[Mu],c] Vi[\[Nu],d]]
+	];
+
+(*************************************************************************************)
+(********************************* Ghost Lagrangian **********************************)
+(*************************************************************************************)
+
+LGhost := Block[{LGhs,mu,gh,ghbar},
+  (* Pure gauge piece *) 	
+  LGhs = -ghGbar.del[DC[ghG,mu],mu];
+ExpandIndices[ LGhs, FlavorExpand->SU2W]];
+
+(*************************************************************************************)
+(***************************** Total Lagrangian **************************************)
+(*************************************************************************************)
+LSMV := LGauge + LFermions + LYukawa + LHiggs + LVector + LGhost;

@@ -1,0 +1,22 @@
+Vector Triplet (Bridge model)
+ Particles
+ Full  name  |A          |A+         | number |2*spin| mass          |width          |color|aux|>LaTex(A)<|>LaTeX(A+)   <|
+Electron-neut|ve         |ve~        |12      |1     |0              |0              |1    |0  |ve        |ve~           |
+Mu-neutrino  |vm         |vm~        |14      |1     |0              |0              |1    |0  |vm        |vm~           |
+Tau-neutrino |vt         |vt~        |16      |1     |0              |0              |1    |0  |vt        |vt~           |
+Electron     |e-         |e+         |11      |1     |0              |0              |1    |-3 |e-        |e+            |
+Muon         |m-         |m+         |13      |1     |0              |0              |1    |-3 |m-        |m+            |
+Tau          |tt-        |tt+        |15      |1     |MTA            |0              |1    |-3 |tt-       |tt+           |
+u-quark      |u          |u~         |2       |1     |0              |0              |3    |2  |u         |u~            |
+c-quark      |c          |c~         |4       |1     |MC             |0              |3    |2  |c         |c~            |
+t-quark      |t          |t~         |6       |1     |MT             |!WT            |3    |2  |t         |t~            |
+d-quark      |d          |d~         |1       |1     |0              |0              |3    |-1 |d         |d~            |
+s-quark      |s          |s~         |3       |1     |0              |0              |3    |-1 |s         |s~            |
+b-quark      |b          |b~         |5       |1     |MB             |0              |3    |-1 |b         |b~            |
+Higgs        |h          |h          |25      |0     |MH             |!WH            |1    |0  |h         |h             |
+Photon       |A          |A          |22      |2     |0              |0              |1    |G  |A         |A             |
+Z            |Z          |Z          |23      |2     |MZ             |!WZ            |1    |0  |Z         |Z             |
+W            |W+         |W-         |24      |2     |MW             |!WW            |1    |3  |W+        |W-            |
+Vz           |Vz         |Vz         |9000001 |2     |MVz            |!WVz           |1    |0  |Vz        |Vz            |
+Vc           |Vc+        |Vc-        |9000002 |2     |MVc            |!WVc           |1    |3  |Vc+       |Vc-           |
+G            |G          |G          |21      |2     |0              |0              |8    |G  |G         |G             |

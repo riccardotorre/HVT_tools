@@ -1,0 +1,335 @@
+(*************************************************************************************)
+(************************* FeynRules model file for **********************************)
+(********************* the Vector Triplet (Bridge model) *****************************)
+(***************************** Riccardo Torre ****************************************)
+(*************************************************************************************)
+M$ModelName = "Vector Triplet (Bridge model)"; 
+
+M$Information = {
+             Date -> "January 24, 2014",
+		   	 Version -> "1.0",
+	         Author -> {"R. Torre[a,b]"}, 
+             Institutions -> {"[a] Dipartimento di Fisica e Astronomia, Università di Padova, and INFN Sezione di Padova, Via Marzolo 8, I-35131 Padova, Italy
+[b] SISSA, Via Bonomea 265, I-34136 Trieste, Italy"},
+             Emails -> {"riccardo.torre@cern.ch"},
+             References -> {"arXiv:xxxx.xxxx"}};
+
+
+(*************************************************************************************)
+(***************************** Index Definitions *************************************)
+(*************************************************************************************)
+IndexRange[ Index[Generation] ] = Range[3];
+
+IndexRange[ Index[Colour] ] = NoUnfold[Range[3]];
+
+IndexRange[ Index[Gluon] ] = NoUnfold[Range[8]];
+
+IndexRange[ Index[SU2W] ] = Range[3];
+
+IndexRange[ Index[SU2H] ] = Range[3];
+
+
+IndexStyle[Colour, i];
+
+IndexStyle[Generation, f];
+
+IndexStyle[Gluon ,a];
+
+IndexStyle[SU2W ,k];
+
+IndexStyle[SU2H ,h];
+
+
+
+(*************************************************************************************)
+(*******************************  Parameters *****************************************)
+(*************************************************************************************)
+(* in vector_triplet-parameters_MG.fr *)
+
+
+(*************************************************************************************)
+(*******************************  Gauge Groups ***************************************)
+(*************************************************************************************)
+M$GaugeGroups = {
+
+  U1Y == {
+        Abelian -> True,
+        GaugeBoson -> B,
+        Charge -> Y,
+        CouplingConstant -> g1},
+
+  SU2L == {
+        Abelian -> False,
+        GaugeBoson -> Wi,
+        StructureConstant -> Eps,
+        CouplingConstant -> gw},
+
+  SU2D == {
+        Abelian -> False,
+        GaugeBoson -> Vi,
+        StructureConstant -> Eps,
+        CouplingConstant -> gst},
+
+  SU3C == {
+        Abelian -> False,
+        GaugeBoson -> G,
+        StructureConstant -> f,
+        SymmetricTensor -> dSUN,
+        Representations -> {T, Colour},
+        CouplingConstant -> gs}
+}
+
+(*************************************************************************************)
+(*******************************  Particles ******************************************)
+(*************************************************************************************)
+M$ClassesDescription = {
+
+(********** Fermions ************)
+	(* Leptons (neutrino): I_3 = +1/2, Q = 0 *)
+  F[1] == {
+        ClassName -> vl,
+        ClassMembers -> {ve,vm,vt},
+        FlavorIndex -> Generation,
+		SelfConjugate -> False,
+		Indices -> {Index[Generation]},
+        Mass -> 0,
+        Width -> 0,
+		QuantumNumbers -> {LeptonNumber -> 1},
+		PropagatorLabel -> {"v", "ve", "vm", "vt"} ,
+		PropagatorType -> S,
+		PropagatorArrow -> Forward,
+        PDG -> {12,14,16},
+        FullName -> {"Electron-neutrino", "Mu-neutrino", "Tau-neutrino"} },
+
+	(* Leptons (electron): I_3 = -1/2, Q = -1 *)
+  F[2] == {
+        ClassName -> l,
+        ClassMembers -> {e, m, tt},
+        FlavorIndex -> Generation,
+		SelfConjugate -> False,
+		Indices -> {Index[Generation]},
+		Mass -> {Ml, {ME, 0}, {MM, 0}, {MTA, 1.777}},
+        Width -> 0,
+		QuantumNumbers -> {Q -> -1, LeptonNumber -> 1},
+		PropagatorLabel -> {"l", "e", "m", "tt"},
+		PropagatorType -> Straight,
+        ParticleName -> {"e-", "m-", "tt-"},
+        AntiParticleName -> {"e+", "m+", "tt+"},
+		PropagatorArrow -> Forward,
+        PDG -> {11, 13, 15},
+        FullName -> {"Electron", "Muon", "Tau"} },
+
+	(* Quarks (u): I_3 = +1/2, Q = +2/3 *)
+  F[3] == {
+        ClassMembers -> {u, c, t},
+        ClassName -> uq,
+        FlavorIndex -> Generation,
+		SelfConjugate -> False,
+		Indices -> {Index[Generation], Index[Colour]},
+		Mass -> {Mu, {MU, 0}, {MC, 1.42}, {MT, 172.9}},
+        Width -> {0, 0, {WT, 1.50833649}},
+		QuantumNumbers -> {Q -> 2/3},
+		PropagatorLabel -> {"uq", "u", "c", "t"},
+		PropagatorType -> Straight,
+		PropagatorArrow -> Forward,
+        PDG -> {2, 4, 6}, 
+        FullName -> {"u-quark", "c-quark", "t-quark"}},
+
+	(* Quarks (d): I_3 = -1/2, Q = -1/3 *) 
+  F[4] == {
+        ClassMembers -> {d, s, b},
+        ClassName -> dq,
+        FlavorIndex -> Generation,
+		SelfConjugate -> False,
+		Indices -> {Index[Generation], Index[Colour]},
+		Mass -> {Md, {MD, 0}, {MS, 0}, {MB, 4.7}},
+        Width -> 0,
+		QuantumNumbers -> {Q -> -1/3},
+		PropagatorLabel -> {"dq", "d", "s", "b"},
+		PropagatorType -> Straight, 
+		PropagatorArrow -> Forward,
+        PDG -> {1,3,5},
+        FullName -> {"d-quark", "s-quark", "b-quark"} },
+
+(******************** Higgs ***********************)
+
+	(* Higgs: physical scalars  *)
+  S[1] == {
+	    ClassName       -> h,
+	    SelfConjugate   -> True,
+	    Mass            -> {MH,125.5},
+	    Width           -> {WH,0.00575308848},
+	    PropagatorLabel -> "h",
+	    PropagatorType  -> D,
+	    PropagatorArrow -> None,
+	    PDG             -> 25,
+	    ParticleName    -> "h",
+	    FullName        -> "Higgs"
+	  },
+
+(************ Vectors - Mass eisenstates ***************)
+
+  V[1] == {
+    	ClassName -> A,
+		SelfConjugate -> True,
+		Indices -> {},
+		Mass -> 0,
+    	Width -> 0,
+		PropagatorLabel -> "a",
+		PropagatorType -> W,
+		PropagatorArrow -> None,
+    	PDG -> 22,
+    	FullName -> "Photon" },
+
+  V[2] == {
+    	ClassName -> Z,
+		SelfConjugate -> True, 
+		Indices -> {},
+		Mass -> {MZ, 91.1876},
+    	Width -> {WZ, 2.44140351},
+		PropagatorLabel -> "Z",
+		PropagatorType -> Sine,
+		PropagatorArrow -> None,
+    	PDG -> 23,
+    	FullName -> "Z" },
+
+  V[3] == {
+    	ClassName -> W,
+		SelfConjugate -> False,
+		Indices -> {},
+		Mass -> {MW, Internal},
+    	Width -> {WW, 2.04759951},
+		QuantumNumbers -> {Q -> 1},
+		PropagatorLabel -> "W",
+		PropagatorType -> Sine,
+		PropagatorArrow -> Forward,
+		ParticleName ->"W+",
+		AntiParticleName ->"W-",
+    	PDG -> 24,
+    	FullName -> "W" },
+
+  V[4] == {
+    	ClassName -> Vz,
+		SelfConjugate -> True,
+		Indices -> {},
+		Mass -> {MVz, Internal},
+		Width -> {WVz, 35.3575},
+		PropagatorLabel -> "Vz",
+		PropagatorType -> Sine,
+		PropagatorArrow -> None,
+    	FullName -> "Vz" },
+
+  V[5] == {
+    	ClassName -> Vc,
+		SelfConjugate -> False,
+		Indices -> {},
+		Mass -> {MVc, Internal},
+		Width -> {WVc, 35.3603},
+		QuantumNumbers -> {Q -> 1},
+		PropagatorLabel -> "Vc",
+		PropagatorType -> Sine,
+		PropagatorArrow -> Forward,
+		ParticleName ->"Vc+",
+		AntiParticleName ->"Vc-",
+    	FullName -> "Vc" },
+
+  V[6] == {
+    	ClassName -> G,
+		SelfConjugate -> True,
+		Indices -> {Index[Gluon]},
+		Mass -> 0,
+    	Width -> 0,
+    	PropagatorLabel -> G,
+		PropagatorType -> C,
+		PropagatorArrow -> None,
+    	PDG -> 21,
+    	FullName -> "G" },
+
+(************ Vectors - Gauge eisenstates ***************)
+
+  V[7] == {
+    	ClassName -> B,
+		Unphysical -> True,
+		SelfConjugate -> True,
+    	Definitions -> {B[mu_] -> -swt Zel[mu] + cwt A[mu]},
+		Indices -> {},
+		Mass -> 0},
+
+  V[8] == {
+    	ClassName -> Wi,
+    	Unphysical -> True,
+    	SelfConjugate -> True,
+    	Definitions -> {Wi[mu_, 1] -> (Wel[mu] + Welbar[mu])/Sqrt[2],
+                    	Wi[mu_, 2] -> (Welbar[mu] - Wel[mu])/Sqrt[2]/I,
+                    	Wi[mu_, 3] -> cwt Zel[mu] + swt A[mu]},
+    	Indices -> {Index[SU2W]},
+    	FlavorIndex -> SU2W,
+    	Mass -> 0,
+    	PDG -> {1,2,3}},
+
+  V[9] == {
+    	ClassName -> Vi,
+    	Unphysical -> True,
+    	SelfConjugate -> True,
+    	Definitions -> {Vi[mu_, 1] -> (Vcel[mu] + Vcelbar[mu])/Sqrt[2],
+                    	Vi[mu_, 2] -> (Vcelbar[mu] - Vcel[mu])/Sqrt[2]/I,
+                    	Vi[mu_, 3] -> Vzel[mu]},
+    	Indices -> {Index[SU2H]},
+    	FlavorIndex -> SU2H,
+    	Mass -> 0},
+
+(************** Vectors - Charge eisenstates ***************)
+
+  V[11] == {
+		ClassName -> Zel,
+		Unphysical -> True,
+		SelfConjugate -> True, 
+    	Definitions -> {Zel[mu_] -> cN Z[mu] + sN Vz[mu]},
+		Indices -> {},
+		FullName -> "Zel"},
+
+  V[12] == {
+		ClassName -> Wel,
+		Unphysical -> True,
+		SelfConjugate -> False,
+    	Definitions -> {Wel[mu_] -> cC W[mu] + sC Vc[mu]},
+		Indices -> {},
+		QuantumNumbers -> {Q -> 1},
+		ParticleName ->"Wel+",
+		AntiParticleName ->"Wel-",
+		FullName -> "Wel" },
+
+  V[13] == {
+		ClassName -> Vzel,
+		Unphysical -> True,
+		SelfConjugate -> True, 
+    	Definitions -> {Vzel[mu_] -> cN Vz[mu] - sN Z[mu]},
+		FullName -> "Vzel" },
+
+  V[14] == {
+		ClassName -> Vcel,
+		Unphysical -> True,
+		SelfConjugate -> False,
+		Definitions -> {Vcel[mu_] -> cC Vc[mu] - sC W[mu]},
+		Indices -> {},
+		QuantumNumbers -> {Q -> 1},
+		ParticleName ->"Vcel+",
+		AntiParticleName ->"Vcel-",
+		FullName -> "Vcel" },
+	
+  U[1] == { 
+    	ClassName       -> ghG, 
+    	SelfConjugate   -> False,
+    	Indices         -> {Index[Gluon]},
+    	Ghost           -> G,
+    	QuantumNumbers  ->{GhostNumber -> 1}, 
+    	Mass            -> 0,
+    	PropagatorLabel -> "uG",
+    	PropagatorType  -> GhostDash,
+    	PropagatorArrow -> Forward}
+
+
+(*************************************************************************************)
+(**************************** End Particles ******************************************)
+(*************************************************************************************)
+};
