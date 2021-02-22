@@ -7,7 +7,7 @@ This repository contains different resources for the study of Heavy Vector Tripl
 
 - HVT_CalcHEP: CalcHEP model v1.0 (also available from [HEPMDB](https://hepmdb.soton.ac.uk/index.php?mod=user&act=showmodel&id=0214.0151))
 
-- HVT_Mathematica_tools (see the [Changelog](./HVT_Mathematica_tools/Changelog.md):
+- HVT_Mathematica_tools (see the [Changelog](./HVT_Mathematica_tools/Changelog.md)):
 
     * Mathematica and Wolfram CDF tool for calculation of physical quantities and automatic generation of a Madgraph5 "param_card.dat"
 
